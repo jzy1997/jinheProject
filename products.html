@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset-min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="shortcut icon" href="./bitbug_favicon.ico" />
+    <script src="js/cookieTools.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/products.js" defer></script>
+    <title>产品展示</title>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header-wrap">
+        <header>
+            <div class="header-left">
+                <span>欢迎来到今合网!</span>
+                <ul>
+                    <li><a href="#" class="login">登录</a></li>
+                    <li><a href="#">网商注册</a></li>
+                    <li><a href="#" class="login">用户登录</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li class="hov">
+                        <a href="#">我的今合</a><span class="iconfont icon-jiantou9"></span>
+                        <div class="inner">
+                            <div class="inner-up">
+                                <a class="inner-a" href="#">
+                                    <img src="imgs/chat.png" alt="">
+                                </a>
+                                <h2>
+                                    <a href="login.html" class="login">您好！请登录</a>
+                                </h2>
+                            </div>
+                            <div class="inner-down">
+                                <ul>
+                                    <li><a href="#">我的关注</a></li>
+                                    <li><a href="#">我的账户余额</a></li>
+                                    <li><a href="#">我的积分</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hov">
+                        <a href="#">手机今合</a>
+                        <span class="iconfont icon-jiantou9"></span>
+                        <div class="inner">
+                            <a href="#">
+                                <img src="imgs/newhome_app.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li><span class="iconfont icon-wode-"></span><a href="#"  style="color:#49b1f0;">今合沸话</a><span class="iconfont icon-jiantou9"></span></li>
+                    <li><span class="iconfont icon-wode-"></span><a href="#">我的订单</a><span class="iconfont icon-jiantou9"></span></li>
+                    <li><span class="iconfont icon-wode-"></span><a href="#">我的收藏</a><span class="iconfont icon-jiantou9"></span></li>
+                    <li class="hov">
+                        <a href="#">商户服务</a><span class="iconfont icon-jiantou9"></span>
+                        <div class="innerBus">
+                            <ul>
+                                <li><a href="#">商户入驻</a></li>
+                                <li><a href="#">今合规则</a></li>
+                                <li><a href="#">招商标准</a></li>
+                                <li><a href="#">服务公司</a></li>
+                                <li><a href="#">连锁网店</a></li>
+                                <li><a href="#">资质标准</a></li>
+                                <li><a href="#">运营费标准</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">开通超级用户</a><span class="iconfont icon-jiantou9"></span></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div class="search-wrap">
+        <div class="search">
+            <div class="search-up">
+                <a class="logo" href="#">
+                    <img src="imgs/logo.gif" alt="">
+                </a>
+                <div class="searchBar">
+                    <div class="searchBar-up">
+                        <div class="searchCase">
+                            <div class="caseActive">搜商品</div>
+                            <div >搜网点</div>
+                        </div>
+                        <div class="searchNav">
+                            <a href="#">干货</a><span>|</span>
+                            <a href="#">米面杂粮</a><span>|</span>
+                            <a href="#">收纳用品</a><span>|</span>
+                            <a href="#">净化除味</a><span>|</span>
+                            <a href="#">纸品湿巾</a><span>|</span>
+                            <a href="#">饮料</a><span>|</span>
+                            <a href="#">牛奶乳品</a>
+                        </div>
+                    </div>
+                    <div class="searchBar-down">
+                        <input type="text" placeholder="请输入关键字!">
+                        <div id="search">搜索</div>
+                    </div>
+                </div>
+                <div class="shopCar">
+                    <span class="iconfont icon-gouwuche-"></span>
+                    <span>去购物车结算</span>
+                    <span class="iconfont icon-jiantou9"></span>
+                    <div class="shopCarFlag">
+                        <div class="cartQian"></div>
+                        <div class="cartCenter num">0</div>
+                        <div class="cartHou"></div>
+                    </div>
+                    <div class="checkCar">
+                        <p><a href="#">登录后可查看购物车明细！</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="search-down">
+                <div class="navTit">
+                    <span class="iconfont icon-shouye-"></span>
+                    <span>全部商品</span>
+                    <span class="iconfont icon-jiantou9"></span>
+                    <ul class="navPanel" style="z-index:100;">
+                        <li><a href="#">美食特产</a><div class="navPanel-link"><a href="#">食品</a><a href="#">冲调</a><a href="#">茶</a><a href="#">酒</a></div></li>
+                    </ul>
+                </div>
+                <ul class="navTit02">
+                    <li><a href="#">首页</a></li>
+                    <li>
+                        <a href="#">健康馆</a>
+                        <img src="imgs/new.png" alt="">
+                    </li>
+                    <li><a href="#">药品信息</a></li>
+                </ul>
+            </div>
+            <a class="open" href="#"><img src="imgs/kaidian.gif" alt=""></a>
+        </div>
+    </div>
+
+    <div class="w">
+        <div class="layout">
+            <div class="searchList">
+                <a href="#" class="imgLink"><img src="imgs/20171108113134100.jpg" alt=""></a>
+                <a href="#" class="searchTitle">小熊尼奥AR口袋动物园识字卡片</a>
+                <a href="#" class="link">立即购买</span></a>
+            </div>
+            <div class="searchList">
+                <a href="#" class="imgLink"><img src="imgs/20171108113134100.jpg" alt=""></a>
+                <a href="#" class="searchTitle">小熊尼奥AR口袋动物园识字卡片</a>
+                <a href="#" class="link">立即购买</span></a>
+            </div>
+            <div class="searchList">
+                <a href="#" class="imgLink"><img src="imgs/20171108113134100.jpg" alt=""></a>
+                <a href="#" class="searchTitle">小熊尼奥AR口袋动物园识字卡片</a>
+                <a href="#" class="link">立即购买</span></a>
+            </div>
+            <div class="searchList">
+                <a href="#" class="imgLink"><img src="imgs/20171108113134100.jpg" alt=""></a>
+                <a href="#" class="searchTitle">小熊尼奥AR口袋动物园识字卡片</a>
+                <a href="#" class="link">立即购买</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w">
+        <div class="cat-sort">
+            <a href="/Search">全部分类</a>
+            <div class="total-sort">共<span>44</span>件商品</div>
+        </div>
+        <div class="cat-row cat-color">
+            <div class="search-title">已选条件</div>
+            <div class="search-body search-selected" id="jqSelPanel">
+                <div title="玩具乐器" id="cgoodsType">分类:<lable class="colo">玩具乐器</lable><span>×</span></div>
+            </div>
+        </div>
+        <div class="cat-detail">
+            <div class="cat-row">
+                <div class="search-title">相关分类:</div>
+                <div class="search-body" id="jqGoodTypePanel">
+                    <a name="cgoodsType" value="010042437" class="selectcur">儿童滑板车</a>
+                    <a name="cgoodsType" value="010042439" class="selectcur">电子玩具</a>
+                    <a name="cgoodsType" value="010042" class="cur">玩具乐器</a>
+                    <a name="cgoodsType" value="010042436" class="selectcur">益智玩具</a>
+                </div>
+            </div>
+            <div class="cat-row">
+                <div class="search-title">价格区间:</div>
+                <div class="search-body" id="jqPricePanel">
+                    <a name="cprice" value="0-100" class="selectcur">0-100元</a>
+                    <a name="cprice" value="100-200" class="selectcur">100-200元</a>
+                    <a name="cprice" value="200-500" class="selectcur">200-500元</a>
+                    <a name="cprice" value="500-1000" class="selectcur">500-1000元</a>
+                    <a name="cprice" value="1000-1500" class="selectcur">1000-1500元</a>
+                    <a name="cprice" value="1500-" class="selectcur">1500元以上</a>
+                </div>
+            </div>
+            <div class="cat-row">
+                <div class="search-title">品牌推荐:</div>
+                <div class="search-body brand-item " id="jqBrandPanel">
+                    <ul class="search-brand">
+                        <li>
+                            <a name="cbrand" value="13691">探索者 (TENSOGER) </a>
+                        </li>
+                        <li>
+                            <a name="cbrand" value="14065">小熊尼奥 (NEOBEAR) </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-foot pinpai">
+                    <span class="iconfont icon-jiantou9"></span>
+                    <a href="javascript:;" class="show-more">
+                        <em>所有品牌</em>
+                    </a>
+                    <a href="javascript:;" class="show-more" id="selectedMore">
+                        多选品牌
+                    </a>
+                </div>
+                <div class="pinpai-detail" style="display:none">
+                    <div class="zimu"><a href="javascript:;" class="select">所有品牌</a><a href="javascript:;">T</a><a href="javascript:;">X</a></div>
+                    <ul class="search-brand pp-logo">
+                            <li>
+                                <a name="cbrand" value="13691">探索者 (TENSOGER) </a>
+                            </li>
+                            <li>
+                                <a name="cbrand" value="14065">小熊尼奥 (NEOBEAR) </a>
+                            </li>
+                    </ul>
+                    <div class="select">已选条件:</div>
+                    <div class="search-body search-selected" id="pinpai_selected">
+                        <div class="cgoodsType" style="display:none"><lable class="colo">鄂绒紫轩</lable><i>×</i></div>
+                    </div>
+                    <div class="btn"><a href="javascript:;" class="ok">确 定</a><a href="javascript:;" class="canle">取 消</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="sort-row">
+            <div class="sort-btn" id="jqOrderPanel">
+                <a name="corder" value="default" class="on">默认
+                    <span class="iconfont icon-jiantou9"></span>
+                </a>
+                <a name="corder" value="num">热销<span class="iconfont icon-jiantou9"></span></a>
+                <a name="corder" value="istock">人气<span class="iconfont icon-jiantou9"></span></a>
+                <a name="corder" value="ipricedown">价格<span class="iconfont icon-jiantou9"></span></a>
+                <a name="corder" value="adddate">最新<span class="iconfont icon-jiantou9"></span></a>
+            </div>
+            <div class="between">
+                <span class="jiage">价格范畴</span>
+                <div class="boxTop">
+                    <input class="ip1" type="text" placeholder="¥" id="searchPriceRangeMin" value="" onkeyup="this.value = this.value.replace(/\D/g, '')" onafterpaste="this.value=this.value.replace(/\D/g,'')" onblur="this.value = this.value.replace(/\D/g, '')">
+                    −
+                    <input class="ip2" type="text" placeholder="¥" id="searchPriceRangeMax" value="" onkeyup="this.value = this.value.replace(/\D/g, '')" onafterpaste="this.value=this.value.replace(/\D/g,'')" onblur="this.value = this.value.replace(/\D/g, '')">
+                    <ul class="boxCon">
+                        <li class="first">
+                            <a class="btn1" id="btnClearPrice">清除</a>
+                            <a class="btn2" id="btnPriceSure">确定</a>
+                        </li>
+                        <li class="second"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="check-g">
+                <input type="checkbox" id="isstock">
+                仅显示有货
+            </div>
+            <div class="check-g">
+                <input type="checkbox" id="ispostfree">
+                商家包邮
+            </div>
+        </div>
+    </div>
+
+    <div class="w">
+        <div class="products">
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer-top">
+        <ul class="footer-top-item">
+            <li>
+                <i class="iconfont icon-weishoucang-"></i>
+                <p>100% 正品保证</p>
+                <span>购物无忧</span>
+            </li>
+            <li>
+                <i class="iconfont icon-weishoucang-"></i>
+                <p>15天无理由退货</p>
+                <span>售后保障</span>
+            </li>
+            <li>
+                <i class="iconfont icon-weishoucang-"></i>
+                <p>精准定位 品质商铺</p>
+                <span>特色购物</span>
+            </li>
+            <li>
+                <i class="iconfont icon-weishoucang-"></i>
+                <p>500余家服务公司</p>
+                <span>特色服务</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-center">
+        <div class="footerCenter">
+            <ul class="footer-center-item">
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>购物指南</h2>
+                    <ol>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">用户介绍</a></li>
+                        <li><a href="#">订单状态</a></li>
+                        <li><a href="#">积分说明</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>售后服务</h2>
+                    <ol>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">退换货流程</a></li>
+                        <li><a href="#">价格保护</a></li>
+                        <li><a href="#">实体服务公司</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>物流配送</h2>
+                    <ol>
+                        <li><a href="#">上门自提</a></li>
+                        <li><a href="#">服务公司配送</a></li>
+                        <li><a href="#">快递直达</a></li>
+                        <li><a href="#">今合自营商城</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>支付方式</h2>
+                    <ol>
+                        <li><a href="#">银联在线支付</a></li>
+                        <li><a href="#">信用卡支付</a></li>
+                        <li><a href="#">账户余额查询</a></li>
+                        <li><a href="#">积分支付</a></li>
+                        <li><a href="#">邮政汇款</a></li>
+                        <li><a href="#">公司转账</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>商户服务</h2>
+                    <ol>
+                        <li><a href="#">商家入驻</a></li>
+                        <li><a href="#">连锁网点</a></li>
+                        <li><a href="#">服务公司</a></li>
+                        <li><a href="#">今合规则</a></li>
+                        <li><a href="#">资质标准</a></li>
+                        <li><a href="#">运管费标准</a></li>
+                        <li><a href="#">招商标准</a></li>
+                    </ol>
+                </li>
+            </ul>
+            <div class="footerCenter-side">
+                <p class="footer-service">客服中心
+                    <span>(周一至周日:<small>9:30-17:30</small>)</span>
+                </p>
+                <ul class="footer-code">
+                    <li style="float:none;">
+                        <span>扫一扫，关注微信公众号</span>
+                        <p>
+                            <img src="imgs/jhwerweim.jpg" width="130" height="130">
+                        </p>
+                        <span>进入公众号，联系在线客服</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer">
+            <div class="footer-copyright">
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                    <img src="imgs/gongan.png" alt="">
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+            </div>
+            <div class="footer-certificate">
+                <div class="footerImgUp">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+                <div class="footerImgDown">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="side-nav">
+        <li>
+            <a href="#">
+                <span class="iconfont icon-wode-"></span>
+            </a>
+            <div>我的今合</div>
+        </li>
+        <li>
+            <a href="#">
+                <span class="iconfont icon-wode-"></span>
+            </a>
+            <div>收藏夹</div>
+        </li>
+        <li>
+            <a href="#">
+                <span class="iconfont icon-wode-"></span>
+            </a>
+            <div>购物车</div>
+        </li>
+        <li>
+            <a href="#">
+                <img src="imgs/chat.png" alt="">
+            </a>
+            <div>沸话</div>
+        </li>
+    </ul>
+
+    <div class="backtop">
+        <a href="#">
+            <span class="iconfont icon-shangjiantou"></span>
+        </a>
+        <div>TOP</div>
+    </div>
+
+    <div class="fix-top">
+        <div class="fix-top-inner">
+            <div class="navTit" id="navTit">
+                <span class="iconfont icon-shouye-"></span>
+                <span>全部商品</span>
+                <span class="iconfont icon-jiantou9"></span>
+            </div>
+            <div class="searchBar-down">
+                <div class="searchSwitch">
+                    商品
+                    <span id="switch-btn" class="iconfont icon-jiantou9"></span>
+                    <ul id="searchDropDown">
+                        <li><a href="#">商品</a></li>
+                        <li><a href="#">网店</a></li>
+                    </ul>
+                </div>
+                <input type="text" placeholder="请输入关键字!">
+                <div id="search">搜索</div>
+            </div>
+            <div class="searchNav">
+                <a href="#">白酒</a><span>|</span>
+                <a href="#">干货</a><span>|</span>
+                <a href="#">洗发水</a><span>|</span>
+                <a href="#">餐具</a><span>|</span>
+                <a href="#">手机通讯</a><span>|</span>
+                <a href="#">篮球鞋</a><span>|</span>
+                <a href="#">汽车座套</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

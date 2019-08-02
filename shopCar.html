@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset-min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/shopCar.css">
+    <link rel="shortcut icon" href="./bitbug_favicon.ico" />
+    <script src="js/cookieTools.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/shopCar.js" defer></script>
+    <title>购物车</title>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header-wrap">
+        <header>
+            <div class="header-left">
+                <span>欢迎来到今合网!</span>
+                <!-- <ul>
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">网商注册</a></li>
+                    <li><a href="#">用户登录</a></li>
+                </ul> -->
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li class="hov">
+                        <a href="#">我的今合</a><span class="iconfont icon-jiantou9"></span>
+                        <div class="inner">
+                            <div class="inner-up">
+                                <a class="inner-a" href="#">
+                                    <img src="imgs/chat.png" alt="">
+                                </a>
+                                <h2>
+                                    <a href="login.html" class="login" >您好！请登录</a>
+                                </h2>
+                            </div>
+                            <div class="inner-down">
+                                <ul>
+                                    <li><a href="#">我的关注</a></li>
+                                    <li><a href="#">我的账户余额</a></li>
+                                    <li><a href="#">我的积分</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hov">
+                        <a href="#">手机今合</a>
+                        <span class="iconfont icon-jiantou9"></span>
+                        <div class="inner">
+                            <a href="#">
+                                <img src="imgs/newhome_app.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li><span class="iconfont icon-wode-"></span><a href="#"  style="color:#49b1f0;">今合沸话</a><span class="iconfont icon-jiantou9"></span></li>
+                    <li><span class="iconfont icon-wode-"></span><a href="#">我的订单</a><span class="iconfont icon-jiantou9"></span></li>
+                    <li><span class="iconfont icon-wode-"></span><a href="#">我的收藏</a><span class="iconfont icon-jiantou9"></span></li>
+                    <li class="hov">
+                        <a href="#">商户服务</a><span class="iconfont icon-jiantou9"></span>
+                        <div class="innerBus">
+                            <ul>
+                                <li><a href="#">商户入驻</a></li>
+                                <li><a href="#">今合规则</a></li>
+                                <li><a href="#">招商标准</a></li>
+                                <li><a href="#">服务公司</a></li>
+                                <li><a href="#">连锁网店</a></li>
+                                <li><a href="#">资质标准</a></li>
+                                <li><a href="#">运营费标准</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">开通超级用户</a><span class="iconfont icon-jiantou9"></span></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div class="w">
+        <div class="shopCarTit">
+            <a href="#" class="logo">
+                <img src="imgs/jdlogo-201708-@1x (1).png" alt="">
+            </a>
+            <a href="#" class="tit">购物车</a>
+            <div class="searchBar">
+                <input type="text" placeholder="自营">
+                <div class="searchBtn">搜索</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- shopCar中部 -->
+    <div class="w">
+        <div class="shopCar">
+            <div class="shopCarHead">
+                <p>
+                   全部商品
+                    <span class="totalNum">
+                        0
+                    </span> 
+                </p>
+                <h2>
+                    配送至 您的老家
+                </h2>
+            </div>
+            <div class="cart-thead">
+				<div class="column t-checkbox">
+                    <div class="cart-checkbox">
+                        <input style="vertical-align: middle" type="checkbox" name="toggle-checkboxes" id="toggle-checkboxes" class="jdcheckbox">
+                        <label style="vertical-align: middle" for="toggle-checkboxes">全选</label>
+                    </div>
+			    </div>
+                <div class="column t-goods">商品</div>
+                <div class="column t-props"></div>
+                <div class="column t-price">单价</div>
+                <div class="column t-quantity">数量</div>
+                <div class="column t-sum">小计</div>
+                <div class="column t-action">操作</div>
+            </div>
+            <div class="shopCarItem">
+                <div class="item-header">
+                    <div class="f-txt">
+                        购满1件，即可享受换购优惠
+                        <a href="javascript:void(0);" id="huangou_50027567472" clstag="pageclick|keycount|cart_201702081|1" class="ftx-01">&nbsp;立即换购&nbsp;&gt;</a>
+                    </div>
+                    <div class="f-price">
+                        <strong></strong>
+                    </div>
+                </div>
+                <div class="item-form">
+                    <input type="checkbox" name="check" class="check">
+                    <div class="cell p-goods">
+                        <div class="goods-item">
+                            <div class="p-img">
+                                <a href="//item.jd.com/8441866.html" 
+                                target="_blank" class="J_zyyhq_8441866">
+                                <img src="imgs/5b8cfa80N707cc7f6.jpg"></a>
+                            </div>
+                            <div class="item-msg">
+                                <div class="p-name">
+                                    <a  href="#">
+                                        AOC 24N1H 23.8英寸 AH-IPS广视角 全面屏三边无框设计 高清接口 节能低蓝光不闪屏 液晶电脑显示器
+                                    </a>
+                                </div>
+                                <div class="p-extend p-extend-new">
+                                    <a href="#none"><span class="iconfont icon-weishoucang-"></span>选服务</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell p-props p-props-new">
+                        <div class="props-txt">23.8英寸/Zero Edge/AH-IPS/HDMI</div>
+                    </div>
+                    <div class="cell p-price p-price-new">
+                        <p class="plus-switch">
+                            <strong>¥879.00</strong>
+                        </p>
+						<div>
+							<a class="sales-promotion ml5" href="#none" clstag="clickcart|keycount|xincart|cart_youHui" data-tips="更多促销">促销<b></b></a>
+                            <div id="sales-promotion_8441866" class="promotion-tips">
+                                <div style="display:none;" class="promotion-tit" style="width: 30px;">促销<b></b></div>
+                                <div class="promotion-cont"  >
+                                    <ul>
+                                        <li><input type="radio" name="radioPromotion_8441866" checked="checked">购买1件可优惠换购热销商品</li>
+                                        <li><input type="radio" title="购买1件可优惠换购热销商品">购买1件可优惠换购热销商品</li>
+                                        <li><input type="radio" title="不使用活动优惠">不使用活动优惠</li>
+                                    </ul>
+                                    <div class="op-btns ac mt20">
+                                        <a href="#none" class="btn-1 select-promotion">确定</a>
+                                        <a href="#none" class="btn-9 ml10 del cancel-promotion">取消</a>
+                                    </div>
+                                </div>
+					        </div>
+						    <div class="clr"></div>
+				        </div>
+            		    <p class="mt5" class="pro-tiny-tip">降价：¥20.00</p>
+                    </div>
+                    <div class="cell p-quantity">
+                        <div class="quantity-form" promoid="50027567472">
+                            <a href="javascript:void(0);" class="decrement disabled" id="">-</a>
+                            <input autocomplete="off" type="text" class="itxt" value="1" id="" minnum="1">
+                            <a href="javascript:void(0);" id="" class="increment">+</a>
+                        </div>
+                        <div class="ac ftx-03 quantity-txt"></div>
+                    </div>
+                    <div class="cell p-sum">
+                        <strong>¥879.00</strong>                                                                                                                                                  <span class="weight" id="weight_8441866" data="4.46" fresh="" skuid="8441866" num="1" afterprice="879.00" category="670;677;688"></span>
+                    </div>
+                    <div class="cell p-ops">
+                        <a id="" class="cart-remove" href="javascript:void(0);" ob="false">删除</a>
+                        <a href="javascript:void(0);" class="cart-follow"ob="false">移到我的关注</a>
+                    </div>
+                </div>
+                <div class="item-extra">
+                    <div class="booking-items  ftx-01">【闪购】2019-07-27 00:00 恢复原价</div>
+                </div>
+                <div class="gift-items gift-items-new">
+                    <div class="gift-item">
+                    <a class="gift-info" href="" target="_blank" >【赠品】AOC 无线 静音办公鼠标MS330</a>
+                    <span class="num">X1</span>
+                    <span class="gift-stock-state"></span>
+                        <a href="//item.jd.com/100005169142.html" target="_blank" class="gift-price">查看价格</a>
+                    </div>
+                </div>
+            </div>
+            <div class="shopCarItem">
+                <div class="item-header">
+                    <div class="f-txt">
+                        购满1件，即可享受换购优惠
+                        <a href="javascript:void(0);" id="huangou_50027567472" clstag="pageclick|keycount|cart_201702081|1" class="ftx-01">&nbsp;立即换购&nbsp;&gt;</a>
+                    </div>
+                    <div class="f-price">
+                        <strong></strong>
+                    </div>
+                </div>
+                <div class="item-form">
+                    <input type="checkbox" name="check" class="check">
+                    <div class="cell p-goods">
+                        <div class="goods-item">
+                            <div class="p-img">
+                                <a href="//item.jd.com/8441866.html" 
+                                target="_blank" class="J_zyyhq_8441866">
+                                <img src="imgs/5b8cfa80N707cc7f6.jpg"></a>
+                            </div>
+                            <div class="item-msg">
+                                <div class="p-name">
+                                    <a  href="#">
+                                        AOC 24N1H 23.8英寸 AH-IPS广视角 全面屏三边无框设计 高清接口 节能低蓝光不闪屏 液晶电脑显示器
+                                    </a>
+                                </div>
+                                <div class="p-extend p-extend-new">
+                                    <a href="#none"><span class="iconfont icon-weishoucang-"></span>选服务</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell p-props p-props-new">
+                        <div class="props-txt">23.8英寸/Zero Edge/AH-IPS/HDMI</div>
+                    </div>
+                    <div class="cell p-price p-price-new">
+                        <p class="plus-switch">
+                            <strong>¥879.00</strong>
+                        </p>
+                        <div>
+                            <a class="sales-promotion ml5" href="#none" clstag="clickcart|keycount|xincart|cart_youHui" data-tips="更多促销">促销<b></b></a>
+                            <div id="sales-promotion_8441866" class="promotion-tips">
+                                <div style="display:none;" class="promotion-tit" style="width: 30px;">促销<b></b></div>
+                                <div class="promotion-cont"  >
+                                    <ul>
+                                        <li><input type="radio" name="radioPromotion_8441866" checked="checked">购买1件可优惠换购热销商品</li>
+                                        <li><input type="radio" title="购买1件可优惠换购热销商品">购买1件可优惠换购热销商品</li>
+                                        <li><input type="radio" title="不使用活动优惠">不使用活动优惠</li>
+                                    </ul>
+                                    <div class="op-btns ac mt20">
+                                        <a href="#none" class="btn-1 select-promotion">确定</a>
+                                        <a href="#none" class="btn-9 ml10 del cancel-promotion">取消</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clr"></div>
+                        </div>
+                        <p class="mt5" class="pro-tiny-tip">降价：¥20.00</p>
+                    </div>
+                    <div class="cell p-quantity">
+                        <div class="quantity-form" promoid="50027567472">
+                            <a href="javascript:void(0);" class="decrement disabled" id="">-</a>
+                            <input autocomplete="off" type="text" class="itxt" value="1" id="" minnum="1">
+                            <a href="javascript:void(0);" id="" class="increment">+</a>
+                        </div>
+                        <div class="ac ftx-03 quantity-txt"></div>
+                    </div>
+                    <div class="cell p-sum">
+                        <strong>¥879.00</strong>                                                                                                                                                  <span class="weight" id="weight_8441866" data="4.46" fresh="" skuid="8441866" num="1" afterprice="879.00" category="670;677;688"></span>
+                    </div>
+                    <div class="cell p-ops">
+                        <a id="" class="cart-remove" href="javascript:void(0);" ob="false">删除</a>
+                        <a href="javascript:void(0);" class="cart-follow"ob="false">移到我的关注</a>
+                    </div>
+                </div>
+                <div class="item-extra">
+                    <div class="booking-items  ftx-01">【闪购】2019-07-27 00:00 恢复原价</div>
+                </div>
+                <div class="gift-items gift-items-new">
+                    <div class="gift-item">
+                    <a class="gift-info" href="" target="_blank" >【赠品】AOC 无线 静音办公鼠标MS330</a>
+                    <span class="num">X1</span>
+                    <span class="gift-stock-state"></span>
+                        <a href="//item.jd.com/100005169142.html" target="_blank" class="gift-price">查看价格</a>
+                    </div>
+                </div>
+            </div>
+            <div class="options-box">
+                <div class="select-all">
+                    <div class="cart-checkbox">
+                        <input style="vertical-align: middle;" type="checkbox" id="toggle-checkboxes_down" name="toggle-checkboxes" class="jdcheckbox" clstag="clickcart|keycount|xincart|cart_allCheckDown">
+                        <label style="vertical-align: middle;" for="toggle-checkboxes_down">全选</label>
+                    </div>
+                </div>
+                <div class="operation">
+                    <a href="#none" class="remove-batch">删除选中商品</a>
+                    <a href="#none" class="follow-batch">移到关注</a>
+                    <a href="#none" class="cleaner-opt J_clr_all">清理购物车</a>
+                </div>
+                <div class="comm-right">
+                    <div class="btn-area">
+                        <a href="javascript:void(0);" onclick="return false;" clstag="clickcart|keycount|xincart|cart_gotoOrder" class="submit-btn" data-bind="4">
+                        去结算<b></b></a>
+                    </div>
+                    <div class="price-sum">
+                        <div>
+                            <span class="txt txt-new">总价：</span>
+                            <span class="price sumPrice">
+                                <em data-bind="0.00">¥0.00</em>
+                            </span>
+                            <b class="ml5 price-tips"></b>
+                            <div class="price-tipsbox-new" style="display: none; left: 159.85px;">
+                                <div class="ui-tips-main">不含运费及送装服务费</div>
+                                <span class="price-tipsbox-arrow"></span>
+                            </div>
+                            <br>
+                            <div id="price-sum-extra-1" class="price-sum-extra"><span class="">促销：</span><span class="">-¥0.00</span></div>
+                        </div>
+                    </div>
+                    <div class="amount-sum">
+                        已选择<em>0</em>件商品<b class="up" clstag="clickcart|keycount|xincart|cart_thumbnailOpen"></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="w">
+        <div class="recommendTit">
+            <h3 class="ac ac1">
+                <b class="smart-head hl"></b>
+                <span class="iconfont icon-weishoucang-"></span>
+                购物车帮你选
+                <b class="smart-head hr"></b>
+            </h3>
+            <p class="ac">看看加购过该商品的人还喜欢哪些</p>
+        </div>
+    </div>
+
+    <div class="w">
+        <div class="cart-smart">
+            <div class="item-main">
+                <a class="item-pic">
+                    <img src="imgs/5b8cfa80N707cc7f6.jpg" alt="">
+                </a>
+                <div class="item-cont">
+                    <p class="ftx-07">
+                        <a href="#" target="_blank">AOC 24N1H 23.8英寸 AH-IPS广视角 全面屏三边无框设计 高清接口 节能低蓝光不闪屏 液晶电脑显示器</a>
+                    </p>
+                    <p class="ftx-10">23.8英寸/Zero Edge/AH-IPS/HDMI </p>
+                    <p class="item-price"><em>¥</em><i>879.00</i></p>
+                </div>
+            </div>
+            <div class="smart-items">
+                <ul>
+                    <li>
+                            <a href="#" class="simg">
+                                <img src="imgs/5ad85152N79227d0d.jpg" alt="">
+                            </a>
+                            <div class="item-name">
+                                <a href="#" target="_blank" class="ftx-07">
+                                AOC 23.6英寸 焕新二代PLS屏 1.6mm窄边框P2491VWHE/BW 广视角 爱眼不闪屏电脑显示器（HDMI版）
+                                </a>
+                            </div>
+                            <div class="mt5">
+                                <span class="item-price">
+                                    <em>¥</em><i>799.00</i>
+                                </span>
+                            </div>
+                            <div class="mt5">
+                                <span>
+                                    <em>11493</em>人已购买
+                                </span>
+                                <a href="#none" class="btn-append">
+                                    <span class="iconfont icon-gouwuche-"></span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="simg">
+                                <img src="imgs/5ad85152N79227d0d.jpg" alt="">
+                            </a>
+                            <div class="item-name">
+                                <a href="#" target="_blank" class="ftx-07">
+                                AOC 23.6英寸 焕新二代PLS屏 1.6mm窄边框P2491VWHE/BW 广视角 爱眼不闪屏电脑显示器（HDMI版）
+                                </a>
+                            </div>
+                            <div class="mt5">
+                                <span class="item-price">
+                                    <em>¥</em><i>799.00</i>
+                                </span>
+                            </div>
+                            <div class="mt5">
+                                <span>
+                                    <em>11493</em>人已购买
+                                </span>
+                                <a href="#none" class="btn-append">
+                                    <span class="iconfont icon-gouwuche-"></span>
+                                </a>
+                            </div>
+                        </li>
+                    <li>
+                        <a href="#" class="simg">
+                            <img src="imgs/5ad85152N79227d0d.jpg" alt="">
+                        </a>
+                        <div class="item-name">
+                            <a href="#" target="_blank" class="ftx-07">
+                            AOC 23.6英寸 焕新二代PLS屏 1.6mm窄边框P2491VWHE/BW 广视角 爱眼不闪屏电脑显示器（HDMI版）
+                            </a>
+                        </div>
+                        <div class="mt5">
+                            <span class="item-price">
+                                <em>¥</em><i>799.00</i>
+                            </span>
+                        </div>
+                        <div class="mt5">
+                            <span>
+                                <em>11493</em>人已购买
+                            </span>
+                            <a href="#none" class="btn-append">
+                                <span class="iconfont icon-gouwuche-"></span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="simg">
+                            <img src="imgs/5ad85152N79227d0d.jpg" alt="">
+                        </a>
+                        <div class="item-name">
+                            <a href="#" target="_blank" class="ftx-07">
+                            AOC 23.6英寸 焕新二代PLS屏 1.6mm窄边框P2491VWHE/BW 广视角 爱眼不闪屏电脑显示器（HDMI版）
+                            </a>
+                        </div>
+                        <div class="mt5">
+                            <span class="item-price">
+                                <em>¥</em><i>799.00</i>
+                            </span>
+                        </div>
+                        <div class="mt5">
+                            <span>
+                                <em>11493</em>人已购买
+                            </span>
+                            <a href="#none" class="btn-append">
+                                <span class="iconfont icon-gouwuche-"></span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w">
+        <div class="cart-smart">
+            <div class="item-main">
+                <a class="item-pic">
+                    <img src="imgs/5b8cfa80N707cc7f6.jpg" alt="">
+                </a>
+                <div class="item-cont">
+                    <p class="ftx-07">
+                        <a href="#" target="_blank">AOC 24N1H 23.8英寸 AH-IPS广视角 全面屏三边无框设计 高清接口 节能低蓝光不闪屏 液晶电脑显示器</a>
+                    </p>
+                    <p class="ftx-10">23.8英寸/Zero Edge/AH-IPS/HDMI </p>
+                    <p class="item-price"><em>¥</em><i>879.00</i></p>
+                </div>
+            </div>
+            <div class="smart-items">
+                <ul>
+                    <li>
+                            <a href="#" class="simg">
+                                <img src="imgs/5ad85152N79227d0d.jpg" alt="">
+                            </a>
+                            <div class="item-name">
+                                <a href="#" target="_blank" class="ftx-07">
+                                AOC 23.6英寸 焕新二代PLS屏 1.6mm窄边框P2491VWHE/BW 广视角 爱眼不闪屏电脑显示器（HDMI版）
+                                </a>
+                            </div>
+                            <div class="mt5">
+                                <span class="item-price">
+                                    <em>¥</em><i>799.00</i>
+                                </span>
+                            </div>
+                            <div class="mt5">
+                                <span>
+                                    <em>11493</em>人已购买
+                                </span>
+                                <a href="#none" class="btn-append">
+                                    <span class="iconfont icon-gouwuche-"></span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="simg">
+                                <img src="imgs/5ad85152N79227d0d.jpg" alt="">
+                            </a>
+                            <div class="item-name">
+                                <a href="#" target="_blank" class="ftx-07">
+                                AOC 23.6英寸 焕新二代PLS屏 1.6mm窄边框P2491VWHE/BW 广视角 爱眼不闪屏电脑显示器（HDMI版）
+                                </a>
+                            </div>
+                            <div class="mt5">
+                                <span class="item-price">
+                                    <em>¥</em><i>799.00</i>
+                                </span>
+                            </div>
+                            <div class="mt5">
+                                <span>
+                                    <em>11493</em>人已购买
+                                </span>
+                                <a href="#none" class="btn-append">
+                                    <span class="iconfont icon-gouwuche-"></span>
+                                </a>
+                            </div>
+                        </li>
+                    <li>
+                        <a href="#" class="simg">
+                            <img src="imgs/5ad85152N79227d0d.jpg" alt="">
+                        </a>
+                        <div class="item-name">
+                            <a href="#" target="_blank" class="ftx-07">
+                            AOC 23.6英寸 焕新二代PLS屏 1.6mm窄边框P2491VWHE/BW 广视角 爱眼不闪屏电脑显示器（HDMI版）
+                            </a>
+                        </div>
+                        <div class="mt5">
+                            <span class="item-price">
+                                <em>¥</em><i>799.00</i>
+                            </span>
+                        </div>
+                        <div class="mt5">
+                            <span>
+                                <em>11493</em>人已购买
+                            </span>
+                            <a href="#none" class="btn-append">
+                                <span class="iconfont icon-gouwuche-"></span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="simg">
+                            <img src="imgs/5ad85152N79227d0d.jpg" alt="">
+                        </a>
+                        <div class="item-name">
+                            <a href="#" target="_blank" class="ftx-07">
+                            AOC 23.6英寸 焕新二代PLS屏 1.6mm窄边框P2491VWHE/BW 广视角 爱眼不闪屏电脑显示器（HDMI版）
+                            </a>
+                        </div>
+                        <div class="mt5">
+                            <span class="item-price">
+                                <em>¥</em><i>799.00</i>
+                            </span>
+                        </div>
+                        <div class="mt5">
+                            <span>
+                                <em>11493</em>人已购买
+                            </span>
+                            <a href="#none" class="btn-append">
+                                <span class="iconfont icon-gouwuche-"></span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer-center">
+        <div class="footerCenter">
+            <ul class="footer-center-item">
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>购物指南</h2>
+                    <ol>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">用户介绍</a></li>
+                        <li><a href="#">订单状态</a></li>
+                        <li><a href="#">积分说明</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>售后服务</h2>
+                    <ol>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">退换货流程</a></li>
+                        <li><a href="#">价格保护</a></li>
+                        <li><a href="#">实体服务公司</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>物流配送</h2>
+                    <ol>
+                        <li><a href="#">上门自提</a></li>
+                        <li><a href="#">服务公司配送</a></li>
+                        <li><a href="#">快递直达</a></li>
+                        <li><a href="#">今合自营商城</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>支付方式</h2>
+                    <ol>
+                        <li><a href="#">银联在线支付</a></li>
+                        <li><a href="#">信用卡支付</a></li>
+                        <li><a href="#">账户余额查询</a></li>
+                        <li><a href="#">积分支付</a></li>
+                        <li><a href="#">邮政汇款</a></li>
+                        <li><a href="#">公司转账</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>商户服务</h2>
+                    <ol>
+                        <li><a href="#">商家入驻</a></li>
+                        <li><a href="#">连锁网点</a></li>
+                        <li><a href="#">服务公司</a></li>
+                        <li><a href="#">今合规则</a></li>
+                        <li><a href="#">资质标准</a></li>
+                        <li><a href="#">运管费标准</a></li>
+                        <li><a href="#">招商标准</a></li>
+                    </ol>
+                </li>
+            </ul>
+            <div class="footerCenter-side">
+                <p class="footer-service">客服中心
+                    <span>(周一至周日:<small>9:30-17:30</small>)</span>
+                </p>
+                <ul class="footer-code">
+                    <li style="float:none;">
+                        <span>扫一扫，关注微信公众号</span>
+                        <p>
+                            <img src="imgs/jhwerweim.jpg" width="130" height="130">
+                        </p>
+                        <span>进入公众号，联系在线客服</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer">
+            <div class="footer-copyright">
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                    <img src="imgs/gongan.png" alt="">
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+            </div>
+            <div class="footer-certificate">
+                <div class="footerImgUp">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+                <div class="footerImgDown">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

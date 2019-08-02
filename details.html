@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset-min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="shortcut icon" href="./bitbug_favicon.ico" />
+    <script src="js/cookieTools.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/details.js" defer></script>
+    <title>详情</title>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header-wrap">
+        <header>
+            <div class="header-left">
+                <span>欢迎来到今合网!</span>
+                <ul>
+                    <li><a href="#" class="login">登录</a></li>
+                    <li><a href="#">网商注册</a></li>
+                    <li><a href="#" class="login">用户登录</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li class="hov">
+                        <a href="#">我的今合</a><span class="iconfont icon-jiantou9"></span>
+                        <div class="inner">
+                            <div class="inner-up">
+                                <a class="inner-a" href="#">
+                                    <img src="imgs/chat.png" alt="">
+                                </a>
+                                <h2>
+                                    <a href="login.html" class="login">您好！请登录</a>
+                                </h2>
+                            </div>
+                            <div class="inner-down">
+                                <ul>
+                                    <li><a href="#">我的关注</a></li>
+                                    <li><a href="#">我的账户余额</a></li>
+                                    <li><a href="#">我的积分</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hov">
+                        <a href="#">手机今合</a>
+                        <span class="iconfont icon-jiantou9"></span>
+                        <div class="inner">
+                            <a href="#">
+                                <img src="imgs/newhome_app.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li><span class="iconfont icon-wode-"></span><a href="#"  style="color:#49b1f0;">今合沸话</a><span class="iconfont icon-jiantou9"></span></li>
+                    <li><span class="iconfont icon-wode-"></span><a href="#">我的订单</a><span class="iconfont icon-jiantou9"></span></li>
+                    <li><span class="iconfont icon-wode-"></span><a href="#">我的收藏</a><span class="iconfont icon-jiantou9"></span></li>
+                    <li class="hov">
+                        <a href="#">商户服务</a><span class="iconfont icon-jiantou9"></span>
+                        <div class="innerBus">
+                            <ul>
+                                <li><a href="#">商户入驻</a></li>
+                                <li><a href="#">今合规则</a></li>
+                                <li><a href="#">招商标准</a></li>
+                                <li><a href="#">服务公司</a></li>
+                                <li><a href="#">连锁网店</a></li>
+                                <li><a href="#">资质标准</a></li>
+                                <li><a href="#">运营费标准</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">开通超级用户</a><span class="iconfont icon-jiantou9"></span></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div class="search-wrap">
+        <div class="search">
+            <div class="search-up">
+                <a class="logo" href="#">
+                    <img src="imgs/logo.gif" alt="">
+                </a>
+                <div class="searchBar">
+                    <div class="searchBar-up">
+                        <div class="searchCase">
+                            <div class="caseActive">搜商品</div>
+                            <div >搜网点</div>
+                        </div>
+                        <div class="searchNav">
+                            <a href="#">干货</a><span>|</span>
+                            <a href="#">米面杂粮</a><span>|</span>
+                            <a href="#">收纳用品</a><span>|</span>
+                            <a href="#">净化除味</a><span>|</span>
+                            <a href="#">纸品湿巾</a><span>|</span>
+                            <a href="#">饮料</a><span>|</span>
+                            <a href="#">牛奶乳品</a>
+                        </div>
+                    </div>
+                    <div class="searchBar-down">
+                        <input type="text" placeholder="请输入关键字!">
+                        <div id="search">搜索</div>
+                    </div>
+                </div>
+                <div class="shopCar">
+                    <span class="iconfont icon-gouwuche-"></span>
+                    <span>去购物车结算</span>
+                    <span class="iconfont icon-jiantou9"></span>
+                    <div class="shopCarFlag">
+                        <div class="cartQian"></div>
+                        <div class="cartCenter num">0</div>
+                        <div class="cartHou"></div>
+                    </div>
+                    <div class="checkCar">
+                        <p><a href="#">登录后可查看购物车明细！</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="search-down">
+                <div class="navTit">
+                    <span class="iconfont icon-shouye-"></span>
+                    <span>全部商品</span>
+                    <span class="iconfont icon-jiantou9"></span>
+                    <ul class="navPanel" style="z-index:100;">
+                        <li><a href="#">美食特产</a><div class="navPanel-link"><a href="#">食品</a><a href="#">冲调</a><a href="#">茶</a><a href="#">酒</a></div></li>
+                    </ul>
+                </div>
+                <ul class="navTit02">
+                    <li><a href="#">首页</a></li>
+                    <li>
+                        <a href="#">健康馆</a>
+                        <img src="imgs/new.png" alt="">
+                    </li>
+                    <li><a href="#">药品信息</a></li>
+                </ul>
+            </div>
+            <a class="open" href="#"><img src="imgs/kaidian.gif" alt=""></a>
+        </div>
+    </div>
+
+    <div class="crumb-wrap">
+        <div class="crumb">
+            <div class="crumb-left-nav">
+                <a href="#">运动户外</a> <span>></span>
+                <a href="#">运动鞋包</a> <span>></span>
+                <a href="#">篮球鞋</a> <span>></span>
+                <a href="#">耐克(NIKE)</a> <span>></span>
+                <a href="#">耐克Nike Air Jordan 6 AJ乔6 男子篮球鞋384664 907961 AR2257 手稿白蓝红外线384664-104 44.5</a>
+            </div>
+            <div class="crumb-right">
+                <a href="#">麦克运动专营店</a>
+                <div class="star">
+                    <span class="iconfont icon-wode-"></span>
+                    <span class="iconfont icon-wode-"></span>
+                    <span class="iconfont icon-wode-"></span>
+                    <span class="iconfont icon-wode-"></span>
+                    <span class="iconfont icon-wode-"></span>
+                </div>
+                <a href="#"> <span class="iconfont icon-shouye-"></span> 联系客服</a>
+                <a href="#"> <span class="iconfont icon-shouye-"></span> 关注店铺</a>
+                <div class="crumb-right-inner">
+                    <h3>详细评分</h3>
+                    <p>商品评价：<span>8.65低</span></p>
+                    <p>商品评价：<span>8.65低</span></p>
+                    <p>商品评价：<span>8.65低</span></p>
+                    <h3>联系客服</h3>
+                    <p><a href="#"> <span class="iconfont icon-shouye-"></span> 联系客服</a></p>
+                    <div class="imgsBox">
+                        <img src="imgs/item.m.jd.com.png" alt="">
+                        <div>关注微店</div>
+                        <img src="imgs/item.m.jd.com.png" alt="">
+                        <div>手机下单</div>
+                    </div>
+                    <div class="bottom">
+                            <a href="#"> <span class="iconfont icon-shouye-"></span> 联系客服</a>
+                            <span>|</span>
+                            <a href="#"> <span class="iconfont icon-shouye-"></span> 联系客服</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="w">
+        <div class="banner">
+            <div id="magnifier">
+                <div id="small">
+                    <div id="mask"></div>
+                    <div id="btn"></div>
+                </div>
+                <div id="big"></div>
+            </div>
+            <div class="spec-list">
+                <div class="toLeft"></div>
+                <div class="toRight"></div>
+                <div class="spec">
+                        <ul class="lh" style="position: absolute; width: 348px; height: 54px; top: 0px; left: 0px;">
+                            <li class="img-hover"><img src="imgs/5a9e013bN253a7cee.jpg"width="50" height="50"></li>
+                            <li class="img-hover"><img src="imgs/5bbc7307N35c2e1d3.jpg"width="50" height="50"></li>
+                            <li class="img-hover"><img src="imgs/5bbc7307N90162127.jpg"width="50" height="50"></li>
+                            <li class="img-hover"><img src="imgs/5bbc7307N52248241.jpg"width="50" height="50"></li>
+                            <li class="img-hover"><img src="imgs/5bbc7307Na7becd6f.jpg"width="50" height="50"></li>
+                            <li class="img-hover"><img src="imgs/5bbc7307Naebdecac.jpg"width="50" height="50"></li>
+                        </ul>
+                </div>
+                <p>
+                    <a class="follow"><span class="iconfont icon-wode-"></span>关注</a>
+                    <a class="share"><span class="iconfont icon-wode-"></span>分享</a>
+                    <a class="report">举报</a>
+                </p>
+            </div>
+        </div>
+        <div class="itemInfo-wrap">
+            <div class="sku-name">
+                耐克Nike Air Jordan 6 AJ乔6 男子篮球鞋384664 907961 AR2257 红外线现货384664-060 44.5                
+            </div>
+            <div class="news">
+                <div class="item" title="预计2-5天发货，请耐心等待" style="display: block;">预计2-5天发货，请耐心等待</div>
+            </div>
+            <div class="summary">
+                <p class="price">
+                    <span class="dt">京 东 价</span>
+                    <span class="p-price">￥1190.00</span>
+                    <a href="#">降价通知</a>
+                </p>
+                <h3 class="offer">
+                    <span class="dt">优 惠 卷</span>
+                    <span class="quan-item" title="仅可购买麦客运动专营店商品 有效期2019-07-16至2019-07-18">
+                        <s></s><b></b>                                        
+                    <span class="text">满1200减60</span>                                </span>
+                    <span class="text">满1200减60</span>                                </span>
+                    <span class="text">满1200减60</span>  
+                    <span class="more-btn">更多&gt;&gt;</span>                              </span>
+                </h3>
+                <div id="comment-count" class="comment-count" >
+                    <p class="comment">累计评价</p>
+                    <a class="count" href="#none">100+</a>
+                </div>
+            </div>
+            <div class="delivery">
+                <div class="dt">配 送 至</div>
+                <span class="area">
+                    北京市朝阳区三环以内
+                    <span class="iconfont icon-jiantou9"></span>
+                </span>
+                <strong>有货,</strong><span class="only">仅剩1件</span>
+                <span>支持</span>  
+                <a href="#">运费险</a>
+                <span>|</span>
+                <a href="#">闪电退款</a>
+                <span style="font-size:12px">在线支付运费10元</span>
+                <span class="iconfont icon-htmal5icon25" style="font-size:12px"></span>
+            </div>
+            <div id="summary-service" class="summary-service">
+                由
+                <a href="" target="_blank" class="hl_red">麦客运动专营店</a>负责发货, 并提供售后服务. 
+            </div>
+            <div class="summary-line"></div>
+            <div class="selection">
+                <div class="color">
+                    <div class="dt ">选择颜色</div>
+                    <div class="option">
+                        <div class="item  selected">
+                            <a href="#none">
+                                <img src="imgs/0b6c926c8486be4e.jpg" width="40" height="40" alt="红外线现货384664-060">
+                                <i>红外线现货384664-060</i>
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                <img src="imgs/0b6c926c8486be4e.jpg" width="40" height="40" alt="红外线现货384664-060">
+                                <i>红外线现货384664-060d</i>
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                <img src="imgs/0b6c926c8486be4e.jpg" width="40" height="40" alt="红外线现货384664-060">
+                                <i>红外线现货384664-060</i>
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                <img src="imgs/0b6c926c8486be4e.jpg" width="40" height="40" alt="红外线现货384664-060">
+                                <i>红外线现货384664-060</i>
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                <img src="imgs/0b6c926c8486be4e.jpg" width="40" height="40" alt="红外线现货384664-060">
+                                <i>红外线现货384664-060</i>
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                <img src="imgs/0b6c926c8486be4e.jpg" width="40" height="40" alt="红外线现货384664-060">
+                                <i>红外线现货384664-060</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="size">
+                    <div class="dt ">选择尺码</div>
+                    <div class="option">
+                        <div class="item  selected">
+                            <a href="#none">
+                                43
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                43
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                43
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                43
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                43
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                43
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                43
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                43
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                43
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                43
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                43
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="valueAdded">
+                    <div class="dt ">增值保障</div>
+                    <div class="option">
+                        <div class="item  selected">
+                            <a href="#none">
+                                <span class="iconfont icon-wode-"></span>
+                                无忧洗3双￥69
+                                <span class="iconfont icon-wode-"></span>
+                                <div class="line"></div>
+                            </a>
+                            <div class="inner">
+                                <input type="checkbox" name="one" id="one">
+                                <label for="one">无忧洗3双
+                                    <a href="#" id="aa">>>详情</a>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                <span class="iconfont icon-wode-"></span>
+                                无忧洗3双￥69
+                                <span class="iconfont icon-wode-"></span>
+                                <div class="line"></div>
+                            </a>
+                            <div class="inner">
+                                <input type="checkbox" name="one" id="one">
+                                <label for="one">无忧洗3双
+                                    <a href="#" id="aa">>>详情</a>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                <span class="iconfont icon-wode-"></span>
+                                无忧洗3双￥69
+                                <span class="iconfont icon-wode-"></span>
+                                <div class="line"></div>
+                            </a>
+                        <div class="inner">
+                            <input type="checkbox" name="one" id="one">
+                            <label for="one">无忧洗3双
+                                <a href="#" id="aa">>>详情</a>
+                            </label>
+                        </div>
+                        </div>
+                        <span class="iconfont icon-wode-"></span>
+                    </div>
+                </div>
+                <div class="staging">
+                    <div class="dt ">增值保障</div>
+                    <div class="option">
+                        <div class="item  selected">
+                            <a href="#none">
+                                不分期
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                ￥710.16起×3期                    
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                ￥360.35起×6期   
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                ￥360.35起×6期                    
+                            </a>
+                        </div>
+                        <div class="item  selected">
+                            <a href="#none">
+                                ￥360.35起×6期                    
+                            </a>
+                        </div>
+                        <span class="iconfont icon-wode-"></span>
+                    </div>
+                </div>
+                <div class="choose-btns">
+                    <a href="javascript:;" class="btn-special1">
+                        <span class="">查询优惠券</span>
+                    </a>
+                    <div class="wrap-input">
+                        <input class="text buy-num"value="1" data-max="200">
+                        <a class="btn-reduce disabled">-</a>
+                        <a class="btn-add">+</a>
+                    </div>
+                    <a href="javascript:;" class="btn-special2">
+                        <span class="">查询优惠券</span>
+                    </a>
+                </div>
+                <div id="summary-tips" class="summary-tips" clstag="shangpin|keycount|product|wenxintishi_2" style="">
+                    <span>温馨提示</span>    <span>·支持7天无理由退货</span>
+                </div>
+            </div>
+        </div>
+        <div class="extratit">
+            <h2>看了又看</h2>
+            <span></span>
+        </div>
+        <div class="extra">
+            <ul>
+                <div class="sidebanner">
+                    <div class="item">
+                        <a href="#">
+                            <img src="imgs/5bfe0a11Na725bb0a.jpg" alt="">
+                            <div>bebe8耐克NIKE Air Jordan 3 Tinker AJ3乔3白红手稿换钩男子休闲篮球鞋 四色换勾红白CJ0939-100 42.5</div>
+                            <p class="pirce">￥1799.00</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="imgs/5bfe0a11Na725bb0a.jpg" alt="">
+                            <div>bebe8耐克NIKE Air Jordan 3 Tinker AJ3乔3白红手稿换钩男子休闲篮球鞋 四色换勾红白CJ0939-100 42.5</div>
+                            <p class="pirce">￥1799.00</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="imgs/5bfe0a11Na725bb0a.jpg" alt="">
+                            <div>bebe8耐克NIKE Air Jordan 3 Tinker AJ3乔3白红手稿换钩男子休闲篮球鞋 四色换勾红白CJ0939-100 42.5</div>
+                            <p class="pirce">￥1799.00</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebanner" >
+                    <div class="item">
+                        <a href="#">
+                            <img src="imgs/5bfe0a11Na725bb0a.jpg" alt="">
+                            <div>bebe8耐克NIKE Air Jordan 3 Tinker AJ3乔3白红手稿换钩男子休闲篮球鞋 四色换勾红白CJ0939-100 42.5</div>
+                            <p class="pirce">￥1799.00</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="imgs/5bfe0a11Na725bb0a.jpg" alt="">
+                            <div>bebe8耐克NIKE Air Jordan 3 Tinker AJ3乔3白红手稿换钩男子休闲篮球鞋 四色换勾红白CJ0939-100 42.5</div>
+                            <p class="pirce">￥1799.00</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="imgs/5bfe0a11Na725bb0a.jpg" alt="">
+                            <div>bebe8耐克NIKE Air Jordan 3 Tinker AJ3乔3白红手稿换钩男子休闲篮球鞋 四色换勾红白CJ0939-100 42.5</div>
+                            <p class="pirce">￥1799.00</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebanner" >
+                    <div class="item">
+                        <a href="#">
+                            <img src="imgs/5bfe0a11Na725bb0a.jpg" alt="">
+                            <div>bebe8耐克NIKE Air Jordan 3 Tinker AJ3乔3白红手稿换钩男子休闲篮球鞋 四色换勾红白CJ0939-100 42.5</div>
+                            <p class="pirce">￥1799.00</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="imgs/5bfe0a11Na725bb0a.jpg" alt="">
+                            <div>bebe8耐克NIKE Air Jordan 3 Tinker AJ3乔3白红手稿换钩男子休闲篮球鞋 四色换勾红白CJ0939-100 42.5</div>
+                            <p class="pirce">￥1799.00</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="imgs/5bfe0a11Na725bb0a.jpg" alt="">
+                            <div>bebe8耐克NIKE Air Jordan 3 Tinker AJ3乔3白红手稿换钩男子休闲篮球鞋 四色换勾红白CJ0939-100 42.5</div>
+                            <p class="pirce">￥1799.00</p>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div class="bannerbtn">
+            <div class="btnup"></div>
+            <div class="btndown"></div>
+        </div>
+    </div>
+
+    <div class="w">
+        <div class="recommended">
+            <div class="recommendedTitle">
+                <span>店长推荐</span>
+            </div>
+            <ul class="recommendItem">
+                <li>
+                    <img src="imgs/5bfe0a11Na725bb0a.jpg" alt="">
+                    <div>bebe8耐克NIKE Air Jordan 3 Tinker AJ3乔3白红手稿换钩男子休闲篮球鞋 四色换勾红白CJ0939-100 42.5</div>
+                    <p class="pirce"> <a href="">￥1799.00</a></p>
+                </li>
+                <li>
+                    <img src="imgs/5bfe0a11Na725bb0a.jpg" alt="">
+                    <div>bebe8耐克NIKE Air Jordan 3 Tinker AJ3乔3白红手稿换钩男子休闲篮球鞋 四色换勾红白CJ0939-100 42.5</div>
+                    <p class="pirce"> <a href="">￥1799.00</a></p>
+                </li>
+                <li>
+                    <img src="imgs/5bfe0a11Na725bb0a.jpg" alt="">
+                    <div>bebe8耐克NIKE Air Jordan 3 Tinker AJ3乔3白红手稿换钩男子休闲篮球鞋 四色换勾红白CJ0939-100 42.5</div>
+                    <p class="pirce"> <a href="">￥1799.00</a></p>
+                </li>
+                <li>
+                    <img src="imgs/5bfe0a11Na725bb0a.jpg" alt="">
+                    <div>bebe8耐克NIKE Air Jordan 3 Tinker AJ3乔3白红手稿换钩男子休闲篮球鞋 四色换勾红白CJ0939-100 42.5</div>
+                    <p class="pirce"> <a href="">￥1799.00</a></p>
+                </li>
+                <li>
+                    <img src="imgs/5bfe0a11Na725bb0a.jpg" alt="">
+                    <div>bebe8耐克NIKE Air Jordan 3 Tinker AJ3乔3白红手稿换钩男子休闲篮球鞋 四色换勾红白CJ0939-100 42.5</div>
+                    <p class="pirce"> <a href="">￥1799.00</a></p>
+                </li>
+                <li>
+                    <img src="imgs/5bfe0a11Na725bb0a.jpg" alt="">
+                    <div>bebe8耐克NIKE Air Jordan 3 Tinker AJ3乔3白红手稿换钩男子休闲篮球鞋 四色换勾红白CJ0939-100 42.5</div>
+                    <p class="pirce"> <a href="">￥1799.00</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="w">
+        <div class="aside">
+            <div class="storeInformation">
+                <div class="storeInformationTit">
+                    麦克运动专营店
+                    <span class="iconfont icon-shouye-"></span>
+                </div>
+                <a class="storeInformationInfo">
+                    <div class="starBox">
+                        <div class="starRating">星级评价</div>
+                        <div class="star-gray">
+                            <h6 class="star-light" style="width: 64px"></h6>
+                        </div>
+                    </div>
+                    <div class="score-parts">
+                        <div class="score-part">
+                            <span class="score-desc">商品评价</span>
+                            <span class="score-detail"><em title="8.82分" class="number green">8.82 低</em></span>
+                        </div>
+                        <div class="score-part">
+                            <span class="score-desc">物流履约</span>
+                            <span class="score-detail"><em title="8.87分" class="number green">8.87 低</em></span>
+                        </div>
+                        <div class="score-part">
+                            <span class="score-desc">售后服务</span>
+                            <span class="score-detail"><em title="9.29分" class="number red">9.29 高</em></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="intoTheStore">
+                    <span class="iconfont icon-shouye-"></span>
+                    进店逛逛
+                </a>
+                <a href="#" class="attention">
+                    <span class="iconfont icon-shouye-"></span>
+                    关注店铺
+                </a>
+
+                <div class="storeClassification">
+                    <div class="tit">店内分类</div>
+                    <dl class="">
+                        <dt class="">
+                            <s></s>
+                            <a href="javascript:;">品牌</a>
+                        </dt>
+                        <dd><a href="javascript:;">NIKE</a></dd>
+                        <dd><a href="javascript:;">ADIDAS</a></dd>
+                    </dl>
+                    <dl class="">
+                        <dt class="">
+                            <s></s>
+                            <a href="javascript:;">品牌</a>
+                        </dt>
+                        <dd><a href="javascript:;">NIKE</a></dd>
+                        <dd><a href="javascript:;">ADIDAS</a></dd>
+                    </dl>
+                    <dl class="">
+                        <dt class="">
+                            <s></s>
+                            <a href="javascript:;">品牌</a>
+                        </dt>
+                        <dd><a href="#">NIKE</a></dd>
+                        <dd><a href="#">ADIDAS</a></dd>
+                    </dl>
+                    <dl class="">
+                        <dt class="">
+                            <s></s>
+                            <a href="javascript:;">品牌</a>
+                        </dt>
+                        <dd><a href="javascript:;">NIKE</a></dd>
+                        <dd><a href="javascript:;">ADIDAS</a></dd>
+                    </dl>
+                    <dl class="">
+                        <dt class="">
+                            <s></s>
+                            <a href="javascript:;">品牌</a>
+                        </dt>
+                        <dd><a href="javascript:;">NIKE</a></dd>
+                        <dd><a href="javascript:;">ADIDAS</a></dd>
+                    </dl>
+                    <dl class="">
+                        <dt class="">
+                            <s></s>
+                            <a href="javascript:;">品牌</a>
+                        </dt>
+                        <dd><a href="#">NIKE</a></dd>
+                        <dd><a href="#">ADIDAS</a></dd>
+                    </dl>
+                    <dl class="">
+                        <dt class="">
+                            <s></s>
+                            <a href="javascript:;">品牌</a>
+                        </dt>
+                        <dd><a href="javascript:;">NIKE</a></dd>
+                        <dd><a href="javascript:;">ADIDAS</a></dd>
+                    </dl>
+                    <dl class="">
+                        <dt class="">
+                            <s></s>
+                            <a href="javascript:;">品牌</a>
+                        </dt>
+                        <dd><a href="javascript:;">NIKE</a></dd>
+                        <dd><a href="javascript:;">ADIDAS</a></dd>
+                    </dl>
+                    <dl class="">
+                        <dt class="">
+                            <s></s>
+                            <a href="javascript:;">品牌</a>
+                        </dt>
+                        <dd><a href="#">NIKE</a></dd>
+                        <dd><a href="#">ADIDAS</a></dd>
+                    </dl>
+                </div>
+
+            </div>
+            <div class="shopRecommendation">
+                <div class="tit">
+                    <a href="#" class="active">店铺热销</a>
+                    <a href="#">热门关注</a>
+                </div>
+                <div class="shopRecommendationBox">
+                    <div class="shopRecommendationItem">
+                        <a href="#">
+                        <div class="imgbox">
+                            <img src="imgs/5b7a49a1Nbdb1b33c.jpg" alt="">
+                            <p>耐克NIKE AIR JORDAN 1 MID AJ1 乔1 男女子休闲运动中帮休闲鞋 凯尔特人男女BQ6931/852542-301 40.5</p>
+                        </div>
+                        </a>
+                        <h2>
+                            <em>热销<i>789</i>件</em>
+                            <strong>￥2299.00</strong>
+                            <p>1</p>
+                        </h2>
+                    </div>
+                    <div class="shopRecommendationItem">
+                        <a href="#">
+                        <div class="imgbox">
+                            <img src="imgs/5b7a49a1Nbdb1b33c.jpg" alt="">
+                            <p>耐克NIKE AIR JORDAN 1 MID AJ1 乔1 男女子休闲运动中帮休闲鞋 凯尔特人男女BQ6931/852542-301 40.5</p>
+                        </div>
+                        </a>
+                        <h2>
+                            <em>热销<i>789</i>件</em>
+                            <strong>￥2299.00</strong>
+                            <p>1</p>
+                        </h2>
+                    </div>
+                    <div class="shopRecommendationItem">
+                        <a href="#">
+                        <div class="imgbox">
+                            <img src="imgs/5b7a49a1Nbdb1b33c.jpg" alt="">
+                            <p>耐克NIKE AIR JORDAN 1 MID AJ1 乔1 男女子休闲运动中帮休闲鞋 凯尔特人男女BQ6931/852542-301 40.5</p>
+                        </div>
+                        </a>
+                        <h2>
+                            <em>热销<i>789</i>件</em>
+                            <strong>￥2299.00</strong>
+                            <p>1</p>
+                        </h2>
+                    </div>
+                    <div class="shopRecommendationItem">
+                        <a href="#">
+                        <div class="imgbox">
+                            <img src="imgs/5b7a49a1Nbdb1b33c.jpg" alt="">
+                            <p>耐克NIKE AIR JORDAN 1 MID AJ1 乔1 男女子休闲运动中帮休闲鞋 凯尔特人男女BQ6931/852542-301 40.5</p>
+                        </div>
+                        </a>
+                        <h2>
+                            <em>热销<i>789</i>件</em>
+                            <strong>￥2299.00</strong>
+                            <p>1</p>
+                        </h2>
+                    </div>
+                    <div class="shopRecommendationItem">
+                        <a href="#">
+                        <div class="imgbox">
+                            <img src="imgs/5b7a49a1Nbdb1b33c.jpg" alt="">
+                            <p>耐克NIKE AIR JORDAN 1 MID AJ1 乔1 男女子休闲运动中帮休闲鞋 凯尔特人男女BQ6931/852542-301 40.5</p>
+                        </div>
+                        </a>
+                        <h2>
+                            <em>热销<i>789</i>件</em>
+                            <strong>￥2299.00</strong>
+                            <p>1</p>
+                        </h2>
+                    </div>
+                    <div class="shopRecommendationItem">
+                        <a href="#">
+                        <div class="imgbox">
+                            <img src="imgs/5b7a49a1Nbdb1b33c.jpg" alt="">
+                            <p>耐克NIKE AIR JORDAN 1 MID AJ1 乔1 男女子休闲运动中帮休闲鞋 凯尔特人男女BQ6931/852542-301 40.5</p>
+                        </div>
+                        </a>
+                        <h2>
+                            <em>热销<i>789</i>件</em>
+                            <strong>￥2299.00</strong>
+                            <p>1</p>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="shopRecommendation">
+                <div class="tit">
+                    <a href="#" class="active">店铺热销</a>
+                    <a href="#">热门关注</a>
+                </div>
+                <div class="shopRecommendationBox">
+                    <div class="shopRecommendationItem">
+                        <a href="#">
+                        <div class="imgbox">
+                            <img src="imgs/5b7a49a1Nbdb1b33c.jpg" alt="">
+                            <p>耐克NIKE AIR JORDAN 1 MID AJ1 乔1 男女子休闲运动中帮休闲鞋 凯尔特人男女BQ6931/852542-301 40.5</p>
+                        </div>
+                        </a>
+                        <h2>
+                            <em>热销<i>789</i>件</em>
+                            <strong>￥2299.00</strong>
+                            <p>1</p>
+                        </h2>
+                    </div>
+                    <div class="shopRecommendationItem">
+                        <a href="#">
+                        <div class="imgbox">
+                            <img src="imgs/5b7a49a1Nbdb1b33c.jpg" alt="">
+                            <p>耐克NIKE AIR JORDAN 1 MID AJ1 乔1 男女子休闲运动中帮休闲鞋 凯尔特人男女BQ6931/852542-301 40.5</p>
+                        </div>
+                        </a>
+                        <h2>
+                            <em>热销<i>789</i>件</em>
+                            <strong>￥2299.00</strong>
+                            <p>1</p>
+                        </h2>
+                    </div>
+                    <div class="shopRecommendationItem">
+                        <a href="#">
+                        <div class="imgbox">
+                            <img src="imgs/5b7a49a1Nbdb1b33c.jpg" alt="">
+                            <p>耐克NIKE AIR JORDAN 1 MID AJ1 乔1 男女子休闲运动中帮休闲鞋 凯尔特人男女BQ6931/852542-301 40.5</p>
+                        </div>
+                        </a>
+                        <h2>
+                            <em>热销<i>789</i>件</em>
+                            <strong>￥2299.00</strong>
+                            <p>1</p>
+                        </h2>
+                    </div>
+                    <div class="shopRecommendationItem">
+                        <a href="#">
+                        <div class="imgbox">
+                            <img src="imgs/5b7a49a1Nbdb1b33c.jpg" alt="">
+                            <p>耐克NIKE AIR JORDAN 1 MID AJ1 乔1 男女子休闲运动中帮休闲鞋 凯尔特人男女BQ6931/852542-301 40.5</p>
+                        </div>
+                        </a>
+                        <h2>
+                            <em>热销<i>789</i>件</em>
+                            <strong>￥2299.00</strong>
+                            <p>1</p>
+                        </h2>
+                    </div>
+                    <div class="shopRecommendationItem">
+                        <a href="#">
+                        <div class="imgbox">
+                            <img src="imgs/5b7a49a1Nbdb1b33c.jpg" alt="">
+                            <p>耐克NIKE AIR JORDAN 1 MID AJ1 乔1 男女子休闲运动中帮休闲鞋 凯尔特人男女BQ6931/852542-301 40.5</p>
+                        </div>
+                        </a>
+                        <h2>
+                            <em>热销<i>789</i>件</em>
+                            <strong>￥2299.00</strong>
+                            <p>1</p>
+                        </h2>
+                    </div>
+                    <div class="shopRecommendationItem">
+                        <a href="#">
+                        <div class="imgbox">
+                            <img src="imgs/5b7a49a1Nbdb1b33c.jpg" alt="">
+                            <p>耐克NIKE AIR JORDAN 1 MID AJ1 乔1 男女子休闲运动中帮休闲鞋 凯尔特人男女BQ6931/852542-301 40.5</p>
+                        </div>
+                        </a>
+                        <h2>
+                            <em>热销<i>789</i>件</em>
+                            <strong>￥2299.00</strong>
+                            <p>1</p>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="detail">
+            <div class="detailTit">
+                <span class="active">商品介绍</span>
+                <span class="notActive">规格与包装</span>
+                <span class="notActive">售后保障</span>
+                <span class="notActive">商品评价(60+)</span>
+                <span class="notActive">本店好评商品</span>
+                <a id="addShopCar" href="#">加入购物车</a>
+            </div>
+            <div class="detailInnerBox">
+            <div class="detailInner firstDetailInner">
+                <div class="info">
+                    <p title="耐克（NIKE）">品牌： <a href="#" >耐克（NIKE）</a></p>
+                    <ul class="parameter2 p-parameter-list">
+                        <li title="bebe8耐克nike AIR JORDAN 6 AJ6 乔6 黑红高帮 全明星红外线男子运动篮球鞋 19复刻新黑红男384664-060 42.5">商品名称：bebe8耐克nike AIR JORDAN 6 AJ6 乔6 黑红高帮 全明星红外线男子运动篮球鞋 19复刻新黑红男384664-060 42.5</li>
+                        <li title="41443787364">商品编号：41443787364</li>
+                        <li title="bebe8运动专营店">店铺： <a href="#" target="_blank">Mike运动专营店</a></li>
+                        <li title="1.0kg">商品毛重：1.0kg</li>
+                        <li title="384664-060">货号：384664-060</li>
+                        <li title="气垫">功能科技：气垫</li>
+                        <li title="耐磨，包裹性，支撑">功能：耐磨，包裹性，支撑</li>
+                        <li title="耐磨橡胶">鞋底材质：耐磨橡胶</li>
+                        <li title="男士">适用人群：男士</li>
+                        <li title="合成革">鞋面材质：合成革</li>
+                        <li title="通用">适用场地：通用</li>
+                        <li title="高帮">款式：高帮</li>
+                        <li title="2019年春季">上市时间：2019年春季</li>
+                    </ul>
+                </div>
+                <div class="imgBox">
+                    <img src="imgs/540e19d6aca83e60.jpg" alt="">
+                    <img src="imgs/540e19d6aca83e60.jpg" alt="">
+                    <img src="imgs/540e19d6aca83e60.jpg" alt="">
+                </div>
+            </div>
+            <div class="detailInner">
+                <div data-tab="item" class="hide" style="display: block;">
+                    <div class="Ptable">
+                        <div class="Ptable-item">
+                            <h3>主体参数</h3>
+                            <dl>
+                                <dl class="clearfix" style="margin:0">
+                                    <dt>颜色</dt>
+                                    <dd>黑红</dd>
+                                </dl>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="package-list">
+                        <h3>包装清单</h3>
+                        <p>暂无</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detailInner" style="height: 20px;"></div>
+            <div class="detailInner">
+                <div class="mt">
+                    <h3 class="fl">商品评价</h3>        
+                </div>
+                <div class="comment-info J-comment-info">
+                    <div class="comment-percent"> <strong class="percent-tit">好评度</strong>
+                        <div class="percent-con">95<span>%</span> </div>
+                    </div>
+                    <div class="percent-info">
+                        <div class="notag">此商品暂时还没有买家印象哦~</div>
+                    </div>
+                </div>
+            </div>
+            <div class="detailInner">
+                <div class="mt">
+                    <h3 class="fl">本店好评商品</h3>        
+                </div>
+                <ul>
+                    <li id="goodsLi">
+                        <div class="pro-wrap">
+                            <div class="p-img">
+                                <a href="#" >
+                                    <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                </a>                        
+                            </div>                        
+                            <div class="p-name">                           
+                                <a href="#">
+                                    bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                </a>                        
+                            </div>                        
+                            <div class="p-price"> 
+                                <a href="#none">
+                                    <span class="iconfont icon-wode-"></span>
+                                    <em class="text">关注</em>
+                                </a>                            
+                                <strong class="price">
+                                    <span class="J-p-45167005676">￥1899.00</span>
+                                </strong>                        
+                            </div>                        
+                            <div class="p-comment">                            
+                                <div class="inner" title=""></div>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pro-wrap">
+                            <div class="p-img">
+                                <a href="#" >
+                                    <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                </a>                        
+                            </div>                        
+                            <div class="p-name">                           
+                                <a href="#">
+                                    bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                </a>                        
+                            </div>                        
+                            <div class="p-price"> 
+                                <a href="#none">
+                                    <span class="iconfont icon-wode-"></span>
+                                    <em class="text">关注</em>
+                                </a>                            
+                                <strong class="price">
+                                    <span class="J-p-45167005676">￥1899.00</span>
+                                </strong>                        
+                            </div>                        
+                            <div class="p-comment">                            
+                                <div class="inner" title=""></div>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pro-wrap">
+                            <div class="p-img">
+                                <a href="#" >
+                                    <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                </a>                        
+                            </div>                        
+                            <div class="p-name">                           
+                                <a href="#">
+                                    bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                </a>                        
+                            </div>                        
+                            <div class="p-price"> 
+                                <a href="#none">
+                                    <span class="iconfont icon-wode-"></span>
+                                    <em class="text">关注</em>
+                                </a>                            
+                                <strong class="price">
+                                    <span class="J-p-45167005676">￥1899.00</span>
+                                </strong>                        
+                            </div>                        
+                            <div class="p-comment">                            
+                                <div class="inner" title=""></div>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pro-wrap">
+                            <div class="p-img">
+                                <a href="#" >
+                                    <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                </a>                        
+                            </div>                        
+                            <div class="p-name">                           
+                                <a href="#">
+                                    bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                </a>                        
+                            </div>                        
+                            <div class="p-price"> 
+                                <a href="#none">
+                                    <span class="iconfont icon-wode-"></span>
+                                    <em class="text">关注</em>
+                                </a>                            
+                                <strong class="price">
+                                    <span class="J-p-45167005676">￥1899.00</span>
+                                </strong>                        
+                            </div>                        
+                            <div class="p-comment">                            
+                                <div class="inner" title=""></div>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pro-wrap">
+                            <div class="p-img">
+                                <a href="#" >
+                                    <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                </a>                        
+                            </div>                        
+                            <div class="p-name">                           
+                                <a href="#">
+                                    bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                </a>                        
+                            </div>                        
+                            <div class="p-price"> 
+                                <a href="#none">
+                                    <span class="iconfont icon-wode-"></span>
+                                    <em class="text">关注</em>
+                                </a>                            
+                                <strong class="price">
+                                    <span class="J-p-45167005676">￥1899.00</span>
+                                </strong>                        
+                            </div>                        
+                            <div class="p-comment">                            
+                                <div class="inner" title=""></div>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pro-wrap">
+                            <div class="p-img">
+                                <a href="#" >
+                                    <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                </a>                        
+                            </div>                        
+                            <div class="p-name">                           
+                                <a href="#">
+                                    bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                </a>                        
+                            </div>                        
+                            <div class="p-price"> 
+                                <a href="#none">
+                                    <span class="iconfont icon-wode-"></span>
+                                    <em class="text">关注</em>
+                                </a>                            
+                                <strong class="price">
+                                    <span class="J-p-45167005676">￥1899.00</span>
+                                </strong>                        
+                            </div>                        
+                            <div class="p-comment">                            
+                                <div class="inner" title=""></div>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pro-wrap">
+                            <div class="p-img">
+                                <a href="#" >
+                                    <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                </a>                        
+                            </div>                        
+                            <div class="p-name">                           
+                                <a href="#">
+                                    bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                </a>                        
+                            </div>                        
+                            <div class="p-price"> 
+                                <a href="#none">
+                                    <span class="iconfont icon-wode-"></span>
+                                    <em class="text">关注</em>
+                                </a>                            
+                                <strong class="price">
+                                    <span class="J-p-45167005676">￥1899.00</span>
+                                </strong>                        
+                            </div>                        
+                            <div class="p-comment">                            
+                                <div class="inner" title=""></div>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pro-wrap">
+                            <div class="p-img">
+                                <a href="#" >
+                                    <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                </a>                        
+                            </div>                        
+                            <div class="p-name">                           
+                                <a href="#">
+                                    bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                </a>                        
+                            </div>                        
+                            <div class="p-price"> 
+                                <a href="#none">
+                                    <span class="iconfont icon-wode-"></span>
+                                    <em class="text">关注</em>
+                                </a>                            
+                                <strong class="price">
+                                    <span class="J-p-45167005676">￥1899.00</span>
+                                </strong>                        
+                            </div>                        
+                            <div class="p-comment">                            
+                                <div class="inner" title=""></div>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pro-wrap">
+                            <div class="p-img">
+                                <a href="#" >
+                                    <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                </a>                        
+                            </div>                        
+                            <div class="p-name">                           
+                                <a href="#">
+                                    bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                </a>                        
+                            </div>                        
+                            <div class="p-price"> 
+                                <a href="#none">
+                                    <span class="iconfont icon-wode-"></span>
+                                    <em class="text">关注</em>
+                                </a>                            
+                                <strong class="price">
+                                    <span class="J-p-45167005676">￥1899.00</span>
+                                </strong>                        
+                            </div>                        
+                            <div class="p-comment">                            
+                                <div class="inner" title=""></div>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pro-wrap">
+                            <div class="p-img">
+                                <a href="#" >
+                                    <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                </a>                        
+                            </div>                        
+                            <div class="p-name">                           
+                                <a href="#">
+                                    bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                </a>                        
+                            </div>                        
+                            <div class="p-price"> 
+                                <a href="#none">
+                                    <span class="iconfont icon-wode-"></span>
+                                    <em class="text">关注</em>
+                                </a>                            
+                                <strong class="price">
+                                    <span class="J-p-45167005676">￥1899.00</span>
+                                </strong>                        
+                            </div>                        
+                            <div class="p-comment">                            
+                                <div class="inner" title=""></div>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pro-wrap">
+                            <div class="p-img">
+                                <a href="#" >
+                                    <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                </a>                        
+                            </div>                        
+                            <div class="p-name">                           
+                                <a href="#">
+                                    bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                </a>                        
+                            </div>                        
+                            <div class="p-price"> 
+                                <a href="#none">
+                                    <span class="iconfont icon-wode-"></span>
+                                    <em class="text">关注</em>
+                                </a>                            
+                                <strong class="price">
+                                    <span class="J-p-45167005676">￥1899.00</span>
+                                </strong>                        
+                            </div>                        
+                            <div class="p-comment">                            
+                                <div class="inner" title=""></div>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pro-wrap">
+                            <div class="p-img">
+                                <a href="#" >
+                                    <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                </a>                        
+                            </div>                        
+                            <div class="p-name">                           
+                                <a href="#">
+                                    bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                </a>                        
+                            </div>                        
+                            <div class="p-price"> 
+                                <a href="#none">
+                                    <span class="iconfont icon-wode-"></span>
+                                    <em class="text">关注</em>
+                                </a>                            
+                                <strong class="price">
+                                    <span class="J-p-45167005676">￥1899.00</span>
+                                </strong>                        
+                            </div>                        
+                            <div class="p-comment">                            
+                                <div class="inner" title=""></div>
+                            </div>                    
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="saleWarranty">
+                <div class="mt">
+                    <h3 class="fl">售后保障</h3>        
+                </div>
+                <div class="item-detail-copyright">
+                    <h2>
+                        <i class="goods"></i>
+                        <strong>卖家服务</strong>
+                    </h2>
+                    <h2>
+                        <i class="goods"></i>
+                        <strong>卖家服务</strong>
+                        <p>
+                            京东平台卖家销售并发货的商品，由平台卖家提供发票和相应的售后服务。请您放心购买！<br>
+                            注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！
+                        </p>
+                    </h2>
+                    <h2>
+                        <i class="goods"></i>
+                        <strong>卖家服务</strong>
+                        <p>
+                            京东平台卖家销售并发货的商品，由平台卖家提供发票和相应的售后服务。请您放心购买！<br>
+                            注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！
+                        </p>
+                    </h2>
+                </div>  
+                <div class="state">
+                    <h4>权利声明：</h4>
+                    <p>京东上的所有商品信息、客户评价、商品咨询、网友讨论等内容，是京东重要的经营资源，未经许可，禁止非法转载使用。</p>
+                    <p><strong>注：</strong>本站商品信息均来自于合作方，其真实性、准确性和合法性由信息拥有者（合作方）负责。本站不提供任何保证，并不承担任何法律责任。</p>
+                </div>
+            </div>
+            <div class="otherGoods">
+                <div class="mt">
+                        <h3 class="fl">本店好评商品</h3>        
+                    </div>
+                    <ul id="otherGoods">
+                        <li id="goodsLi">
+                            <div class="pro-wrap">
+                                <div class="p-img">
+                                    <a href="#" >
+                                        <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                    </a>                        
+                                </div>                        
+                                <div class="p-name">                           
+                                    <a href="#">
+                                        bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                    </a>                        
+                                </div>                        
+                                <div class="p-price"> 
+                                    <a href="#none">
+                                        <span class="iconfont icon-wode-"></span>
+                                        <em class="text">关注</em>
+                                    </a>                            
+                                    <strong class="price">
+                                        <span class="J-p-45167005676">￥1899.00</span>
+                                    </strong>                        
+                                </div>                        
+                                <div class="p-comment">                            
+                                    <div class="inner" title=""></div>
+                                </div>                    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pro-wrap">
+                                <div class="p-img">
+                                    <a href="#" >
+                                        <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                    </a>                        
+                                </div>                        
+                                <div class="p-name">                           
+                                    <a href="#">
+                                        bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                    </a>                        
+                                </div>                        
+                                <div class="p-price"> 
+                                    <a href="#none">
+                                        <span class="iconfont icon-wode-"></span>
+                                        <em class="text">关注</em>
+                                    </a>                            
+                                    <strong class="price">
+                                        <span class="J-p-45167005676">￥1899.00</span>
+                                    </strong>                        
+                                </div>                        
+                                <div class="p-comment">                            
+                                    <div class="inner" title=""></div>
+                                </div>                    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pro-wrap">
+                                <div class="p-img">
+                                    <a href="#" >
+                                        <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                    </a>                        
+                                </div>                        
+                                <div class="p-name">                           
+                                    <a href="#">
+                                        bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                    </a>                        
+                                </div>                        
+                                <div class="p-price"> 
+                                    <a href="#none">
+                                        <span class="iconfont icon-wode-"></span>
+                                        <em class="text">关注</em>
+                                    </a>                            
+                                    <strong class="price">
+                                        <span class="J-p-45167005676">￥1899.00</span>
+                                    </strong>                        
+                                </div>                        
+                                <div class="p-comment">                            
+                                    <div class="inner" title=""></div>
+                                </div>                    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pro-wrap">
+                                <div class="p-img">
+                                    <a href="#" >
+                                        <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                    </a>                        
+                                </div>                        
+                                <div class="p-name">                           
+                                    <a href="#">
+                                        bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                    </a>                        
+                                </div>                        
+                                <div class="p-price"> 
+                                    <a href="#none">
+                                        <span class="iconfont icon-wode-"></span>
+                                        <em class="text">关注</em>
+                                    </a>                            
+                                    <strong class="price">
+                                        <span class="J-p-45167005676">￥1899.00</span>
+                                    </strong>                        
+                                </div>                        
+                                <div class="p-comment">                            
+                                    <div class="inner" title=""></div>
+                                </div>                    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pro-wrap">
+                                <div class="p-img">
+                                    <a href="#" >
+                                        <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                    </a>                        
+                                </div>                        
+                                <div class="p-name">                           
+                                    <a href="#">
+                                        bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                    </a>                        
+                                </div>                        
+                                <div class="p-price"> 
+                                    <a href="#none">
+                                        <span class="iconfont icon-wode-"></span>
+                                        <em class="text">关注</em>
+                                    </a>                            
+                                    <strong class="price">
+                                        <span class="J-p-45167005676">￥1899.00</span>
+                                    </strong>                        
+                                </div>                        
+                                <div class="p-comment">                            
+                                    <div class="inner" title=""></div>
+                                </div>                    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pro-wrap">
+                                <div class="p-img">
+                                    <a href="#" >
+                                        <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                    </a>                        
+                                </div>                        
+                                <div class="p-name">                           
+                                    <a href="#">
+                                        bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                    </a>                        
+                                </div>                        
+                                <div class="p-price"> 
+                                    <a href="#none">
+                                        <span class="iconfont icon-wode-"></span>
+                                        <em class="text">关注</em>
+                                    </a>                            
+                                    <strong class="price">
+                                        <span class="J-p-45167005676">￥1899.00</span>
+                                    </strong>                        
+                                </div>                        
+                                <div class="p-comment">                            
+                                    <div class="inner" title=""></div>
+                                </div>                    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pro-wrap">
+                                <div class="p-img">
+                                    <a href="#" >
+                                        <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                    </a>                        
+                                </div>                        
+                                <div class="p-name">                           
+                                    <a href="#">
+                                        bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                    </a>                        
+                                </div>                        
+                                <div class="p-price"> 
+                                    <a href="#none">
+                                        <span class="iconfont icon-wode-"></span>
+                                        <em class="text">关注</em>
+                                    </a>                            
+                                    <strong class="price">
+                                        <span class="J-p-45167005676">￥1899.00</span>
+                                    </strong>                        
+                                </div>                        
+                                <div class="p-comment">                            
+                                    <div class="inner" title=""></div>
+                                </div>                    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pro-wrap">
+                                <div class="p-img">
+                                    <a href="#" >
+                                        <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                    </a>                        
+                                </div>                        
+                                <div class="p-name">                           
+                                    <a href="#">
+                                        bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                    </a>                        
+                                </div>                        
+                                <div class="p-price"> 
+                                    <a href="#none">
+                                        <span class="iconfont icon-wode-"></span>
+                                        <em class="text">关注</em>
+                                    </a>                            
+                                    <strong class="price">
+                                        <span class="J-p-45167005676">￥1899.00</span>
+                                    </strong>                        
+                                </div>                        
+                                <div class="p-comment">                            
+                                    <div class="inner" title=""></div>
+                                </div>                    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pro-wrap">
+                                <div class="p-img">
+                                    <a href="#" >
+                                        <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                    </a>                        
+                                </div>                        
+                                <div class="p-name">                           
+                                    <a href="#">
+                                        bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                    </a>                        
+                                </div>                        
+                                <div class="p-price"> 
+                                    <a href="#none">
+                                        <span class="iconfont icon-wode-"></span>
+                                        <em class="text">关注</em>
+                                    </a>                            
+                                    <strong class="price">
+                                        <span class="J-p-45167005676">￥1899.00</span>
+                                    </strong>                        
+                                </div>                        
+                                <div class="p-comment">                            
+                                    <div class="inner" title=""></div>
+                                </div>                    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pro-wrap">
+                                <div class="p-img">
+                                    <a href="#" >
+                                        <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                    </a>                        
+                                </div>                        
+                                <div class="p-name">                           
+                                    <a href="#">
+                                        bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                    </a>                        
+                                </div>                        
+                                <div class="p-price"> 
+                                    <a href="#none">
+                                        <span class="iconfont icon-wode-"></span>
+                                        <em class="text">关注</em>
+                                    </a>                            
+                                    <strong class="price">
+                                        <span class="J-p-45167005676">￥1899.00</span>
+                                    </strong>                        
+                                </div>                        
+                                <div class="p-comment">                            
+                                    <div class="inner" title=""></div>
+                                </div>                    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pro-wrap">
+                                <div class="p-img">
+                                    <a href="#" >
+                                        <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                    </a>                        
+                                </div>                        
+                                <div class="p-name">                           
+                                    <a href="#">
+                                        bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                    </a>                        
+                                </div>                        
+                                <div class="p-price"> 
+                                    <a href="#none">
+                                        <span class="iconfont icon-wode-"></span>
+                                        <em class="text">关注</em>
+                                    </a>                            
+                                    <strong class="price">
+                                        <span class="J-p-45167005676">￥1899.00</span>
+                                    </strong>                        
+                                </div>                        
+                                <div class="p-comment">                            
+                                    <div class="inner" title=""></div>
+                                </div>                    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pro-wrap">
+                                <div class="p-img">
+                                    <a href="#" >
+                                        <img src="imgs/b77a9c76f7633e94.jpg" height="220" width="220">
+                                    </a>                        
+                                </div>                        
+                                <div class="p-name">                           
+                                    <a href="#">
+                                        bebe8耐克Air Jordan 1 MID AJ1 OG乔1 鸳鸯 黑红芝加哥休闲篮球鞋 皇家白蓝男555088-401 45
+                                    </a>                        
+                                </div>                        
+                                <div class="p-price"> 
+                                    <a href="#none">
+                                        <span class="iconfont icon-wode-"></span>
+                                        <em class="text">关注</em>
+                                    </a>                            
+                                    <strong class="price">
+                                        <span class="J-p-45167005676">￥1899.00</span>
+                                    </strong>                        
+                                </div>                        
+                                <div class="p-comment">                            
+                                    <div class="inner" title=""></div>
+                                </div>                    
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 底部 -->
+    <div class="footer-top">
+        <ul class="footer-top-item">
+            <li>
+                <i class="iconfont icon-weishoucang-"></i>
+                <p>100% 正品保证</p>
+                <span>购物无忧</span>
+            </li>
+            <li>
+                <i class="iconfont icon-weishoucang-"></i>
+                <p>15天无理由退货</p>
+                <span>售后保障</span>
+            </li>
+            <li>
+                <i class="iconfont icon-weishoucang-"></i>
+                <p>精准定位 品质商铺</p>
+                <span>特色购物</span>
+            </li>
+            <li>
+                <i class="iconfont icon-weishoucang-"></i>
+                <p>500余家服务公司</p>
+                <span>特色服务</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-center">
+        <div class="footerCenter">
+            <ul class="footer-center-item">
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>购物指南</h2>
+                    <ol>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>购物指南</h2>
+                    <ol>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>购物指南</h2>
+                    <ol>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>购物指南</h2>
+                    <ol>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">注册流程</a></li>
+                    </ol>
+                </li>
+            </ul>
+            <div class="footerCenter-side">
+                <p class="footer-service">客服中心
+                    <span>(周一至周日:<small>9:30-17:30</small>)</span>
+                </p>
+                <ul class="footer-code">
+                    <li style="float:none;">
+                        <span>扫一扫，关注微信公众号</span>
+                        <p>
+                            <img src="imgs/jhwerweim.jpg" width="130" height="130">
+                        </p>
+                        <span>进入公众号，联系在线客服</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer">
+            <div class="footer-copyright">
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                    <img src="imgs/gongan.png" alt="">
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+            </div>
+            <div class="footer-certificate">
+                <div class="footerImgUp">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+                <div class="footerImgDown">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="side-nav">
+        <li>
+            <a href="#">
+                <span class="iconfont icon-wode-"></span>
+            </a>
+            <div>我的今合</div>
+        </li>
+        <li>
+            <a href="#">
+                <span class="iconfont icon-wode-"></span>
+            </a>
+            <div>我的今合</div>
+        </li>
+        <li>
+            <a href="#">
+                <span class="iconfont icon-wode-"></span>
+            </a>
+            <div>我的今合</div>
+        </li>
+        <li>
+            <a href="#">
+                <img src="imgs/chat.png" alt="">
+            </a>
+            <div>我的今合</div>
+        </li>
+    </ul>
+
+    <div class="backtop">
+        <a href="#">
+            <span class="iconfont icon-shangjiantou"></span>
+        </a>
+        <div>TOP</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>今合网连锁网店购物平台，一个没什么不可能的奇妙网站</title>
+    <link rel="stylesheet" href="css/reset-min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="shortcut icon" href="./bitbug_favicon.ico" />
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/cookieTools.js"></script>
+    <script src="js/index.js" defer></script> 
+    <script src="js/swiper.min.js"></script>
+</head>
+<body>
+
+    <!-- 头部导航条部分 -->
+    <div class="header-wrap">
+        <header>
+            <div class="header-left">
+                <span>欢迎来到今合网!</span>
+                <ul>
+                    <li><a href="#" class="login">登录</a></li>
+                    <li><a href="#">网商注册</a></li>
+                    <li><a href="#" class="login">用户登录</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li class="hov">
+                        <a href="#">我的今合</a><span class="iconfont icon-jiantou9"></span>
+                        <div class="inner">
+                            <div class="inner-up">
+                                <a class="inner-a" href="#">
+                                    <img src="imgs/chat.png" alt="">
+                                </a>
+                                <h2>
+                                    <a href="#" class="login">您好！请登录</a>
+                                </h2>
+                            </div>
+                            <div class="inner-down">
+                                <ul>
+                                    <li><a href="#">我的关注</a></li>
+                                    <li><a href="#">我的账户余额</a></li>
+                                    <li><a href="#">我的积分</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hov">
+                        <a href="#">手机今合</a>
+                        <span class="iconfont icon-jiantou9"></span>
+                        <div class="inner">
+                            <a href="#">
+                                <img src="imgs/newhome_app.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li><span class="iconfont icon-wode-"></span><a href="#" style="color:#49b1f0;">今合沸话</a><span class="iconfont icon-jiantou9"></span></li>
+                    <li><span class="iconfont icon-wode-"></span><a href="#">我的订单</a><span class="iconfont icon-jiantou9"></span></li>
+                    <li><span class="iconfont icon-wode-"></span><a href="#">我的收藏</a><span class="iconfont icon-jiantou9"></span></li>
+                    <li class="hov">
+                        <a href="#">商户服务</a><span class="iconfont icon-jiantou9"></span>
+                        <div class="innerBus">
+                            <ul>
+                                <li><a href="#">商户入驻</a></li>
+                                <li><a href="#">今合规则</a></li>
+                                <li><a href="#">招商标准</a></li>
+                                <li><a href="#">服务公司</a></li>
+                                <li><a href="#">连锁网店</a></li>
+                                <li><a href="#">资质标准</a></li>
+                                <li><a href="#">运营费标准</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">开通超级用户</a><span class="iconfont icon-jiantou9"></span></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <!-- 搜索框部分 -->
+
+    <div class="search-wrap">
+        <div class="search">
+            <div class="search-up">
+                <a class="logo" href="#">
+                    <img src="imgs/logo.gif" alt="">
+                </a>
+                <div class="searchBar">
+                    <div class="searchBar-up">
+                        <div class="searchCase">
+                            <div class="caseActive">搜商品</div>
+                            <div >搜网点</div>
+                        </div>
+                        <div class="searchNav">
+                            <a href="#">干货</a><span>|</span>
+                            <a href="#">米面杂粮</a><span>|</span>
+                            <a href="#">收纳用品</a><span>|</span>
+                            <a href="#">净化除味</a><span>|</span>
+                            <a href="#">纸品湿巾</a><span>|</span>
+                            <a href="#">饮料</a><span>|</span>
+                            <a href="#">牛奶乳品</a>
+                        </div>
+                    </div>
+                    <div class="searchBar-down">
+                        <input type="text" placeholder="请输入关键字!">
+                        <div id="search">搜索</div>
+                    </div>
+                </div>
+                <div class="shopCar">
+                    <span class="iconfont icon-gouwuche-"></span>
+                    <span>去购物车结算</span>
+                    <span class="iconfont icon-jiantou9"></span>
+                    <div class="shopCarFlag">
+                        <div class="cartQian"></div>
+                        <div class="cartCenter num">0</div>
+                        <div class="cartHou"></div>
+                    </div>
+                    <div class="checkCar">
+                        <p><a href="#">登录后可查看购物车明细！</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="search-down">
+                <div class="navTit">
+                    <span class="iconfont icon-shouye-"></span>
+                    <span>全部商品</span>
+                    <span class="iconfont icon-jiantou9"></span>
+                </div>
+                <ul class="navTit02">
+                    <li><a href="#">首页</a></li>
+                    <li>
+                        <a href="#">健康馆</a>
+                        <img src="imgs/new.png" alt="">
+                    </li>
+                    <li><a href="#">药品信息</a></li>
+                </ul>
+            </div>
+
+
+            <a class="open" href="#"><img src="imgs/kaidian.gif" alt=""></a>
+        </div>
+    </div>
+
+    <!-- 轮播图部分 -->
+    <div class="carousel-wrap">
+        <button id="prev"></button>
+        <button id="next"></button>
+        <div class="banner">
+            <div class="carousel">
+                <ul class="slider">
+                    <li class="items"><a href="#"><img src="imgs/29ef56f51fb240b6857b7e3f1a29a89f.jpg" alt=""></a><img src="imgs/29ef56f51fb240b6857b7e3f1a29a89f.jpg" alt=""></li>
+                    <li class="items"><a href="#"><img src="imgs/ac75ca96501348b4ba0acdad8d0f7adc.jpg" alt=""></a></li>
+                    <li class="items"><a href="#"><img src="imgs/ba172773d38b4becac1cf54d0236d4a2.jpg" alt=""></a></li>
+                    <li class="items"><a href="#"><img src="imgs/18a7fb834b684724b421b9f2872706b6.jpg" alt=""></a></li>
+                </ul>
+                <ul class="page">
+                    <li class="but focus"></li>
+                    <li class="but"></li>
+                    <li class="but"></li>
+                    <li class="but"></li>
+                </ul>
+            </div>
+            <ul class="navPanel">
+                <li><a href="#">美食特产</a><div class="navPanel-link"><a href="#">食品</a><a href="#">冲调</a><a href="#">茶</a><a href="#">酒</a></div></li>
+            </ul>
+            <div class="bannerRight">
+                <div class="bannerRight-header">
+                    <span href="#">今合自营</span>
+                    <a href="#">进入店铺</a>
+                </div>
+                <div class="bannerRight-content">
+                        <a href="#"><img src="imgs/d52ffe6ba1b1475ca995065354b03716.gif" alt=""></a>
+                        <a href="#"><img src="imgs/zy2.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 商品展示区域 -->
+    <div class="content">
+        <div class="content01">
+            <div class="newShop">
+                <h2>
+                    <span>新店推荐</span>
+                    <a href="#">我要开店 >></a>
+                </h2>
+                <ul>
+                    <li><a href="#"><img src="imgs/d6bba62200a149d7b524456316ddcc32.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="imgs/442c92a69a524a199c0337d5072e9db3.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="imgs/25844bf6b06c4c9a8afa68a121208892.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="imgs/b238778c1f8142359228274ff96639bc.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="adShop">
+                <h2>
+                    <span>热点关注</span>
+                    <a href="#">更多孵化品牌 >></a>
+                </h2>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <ul class="swiper-slide"></ul>
+                        <ul class="swiper-slide"></ul>
+                        <ul class="swiper-slide"></ul>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="content02">
+            <table>
+                <tr>
+                    <td rowspan="2">
+                        <div class="trTit"><a class="innerA" href="#"></a></div>
+                        <div class="trInner"><a class="innerA" href="#" style="background: url(imgs/5e61ff47e8dc49b8887a80eacd6db6b2.jpg)"></a></div>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <div class="mark">
+                                <p>进入品牌网店</p>
+                            </div>
+                            <span class="iconfont icon-htmal5icon25"></span>
+                            <i>2</i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" style="background-image: url(imgs/be7448f44ef74077b87ae85006e7fa76.jpg)">
+                            <div class="mark">
+                                <p>进入品牌网店</p>
+                            </div>
+                            <span class="iconfont icon-htmal5icon25"></span>
+                            <i>2</i>
+                        </a>
+                    </td>
+                    <td rowspan="2">
+                        <div class="trTit" style="background: #fff url(imgs/bg.png) 0 -51px;"><a class="innerA" href="#"></a></div>
+                        <div class="trInner"><a class="innerA" href="#"></a></div>
+                    </td>
+                    <td>
+                        <a href="#" style="background-image: url(imgs/0e74fe3873c84058b0a142dcbc012bde.jpg)">
+                            <div class="mark">
+                                <p>进入品牌网店</p>
+                            </div>
+                            <span class="iconfont icon-htmal5icon25"></span>
+                            <i>2</i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" style="background-image: url(imgs/de62db3a799a43d580d2a59ec56bae6b.jpg)">
+                            <div class="mark">
+                                <p>进入品牌网店</p>
+                            </div>
+                            <span class="iconfont icon-htmal5icon25"></span>
+                            <i>1</i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" style="background-image: url(imgs/d653c97b741741ef902dc5d8c10c01c2.jpg)">
+                            <div class="mark">
+                                <p>进入品牌网店</p>
+                            </div>
+                            <span class="iconfont icon-htmal5icon25"></span>
+                            <i>4</i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" style="background-image: url(imgs/58e40446106646e7aa16c5dade0a80d1.jpg)">
+                            <div class="mark">
+                                <p>进入品牌网店</p>
+                            </div>
+                            <span class="iconfont icon-htmal5icon25"></span>
+                            <i>3</i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" style="background-image: url(imgs/b54eae42435143c4956290f056d80ad0.jpg)">
+                            <div class="mark">
+                                <p>进入品牌网店</p>
+                            </div>
+                            <span class="iconfont icon-htmal5icon25"></span>
+                            <i>4</i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" style="background-image: url(imgs/14edff657ae64cfaa981237ce9ca8826.jpg)">
+                            <div class="mark">
+                                <p>进入品牌网店</p>
+                            </div>
+                            <span class="iconfont icon-htmal5icon25"></span>
+                            <i>3</i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <a href="#" class="adv">
+            <img src="imgs/ee60abeab42d4488b9fe5a5fa87a79f9.jpg" alt="">
+        </a>
+
+        <div class="content03">
+            <div class="conTit" id="food">美食特产</div>
+            <div class="conNav">
+                <a href="#">进口零食</a><span>|</span>
+                <a href="#">休闲食品</a><span>|</span>
+                <a href="#">休闲食品</a><span>|</span>
+                <a href="#">进口零食</a>
+            </div>
+            <div class="shopImg">
+                <a href="#">
+                    <img src="imgs/6cfa7548687d443b8013d729c50deb36.jpg" alt="">
+                </a>
+            </div>
+            <ul class="jhCol"></ul>
+            <div class="foodImg">
+                <a href="#">
+                    <img src="imgs/d5fb699ae13a424ba47d9cdb3ef8220b.jpg" alt="">
+                </a>
+            </div>
+            <ul class="jhCol"></ul>
+        </div>
+
+        <div class="content03">
+                <div class="conTit" id="home" style="background-position:0 -153px;">家居用品</div>
+                <div class="conNav">
+                    <a href="#">进口零食</a><span>|</span>
+                    <a href="#">进口零食</a><span>|</span>
+                    <a href="#">进口零食</a>
+                </div>
+                <div class="shopImg">
+                    <a href="#">
+                        <img src="imgs/1a8a816681f94470a51ed79ddd690314.jpg" alt="">
+                    </a>
+                </div>
+                <ul class="jhCol"></ul>
+                <div class="foodImg">
+                    <a href="#">
+                        <img src="imgs/6b8a7662848c4f4d91d47031a12b3760.jpg" alt="">
+                    </a>
+                </div>
+                <ul class="jhCol"></ul>
+        </div>
+
+        <a href="#" class="adv">
+            <img src="imgs/f1f40cafacc04d13bd930eacad978ddb.jpg" alt="">
+        </a>
+
+        <div class="content03">
+            <div class="conTit" id="beauty" style="background-position:  0 -255px;">美容护肤</div>
+            <div class="conNav">
+                <a href="#">进口零食</a><span>|</span>
+                <a href="#">进口零食</a><span>|</span>
+                <a href="#">进口零食</a>
+            </div>
+            <div class="shopImg">
+                <a href="#">
+                    <img src="imgs/0e78d5af90804afbac5233682f7229bb.jpg" alt="">
+                </a>
+            </div>
+            <ul class="jhCol"></ul>
+            <div class="foodImg">
+                <a href="#">
+                    <img src="imgs/67ab99886a9e4ca3a2202f8fb5447342.jpg" alt="">
+                </a>
+            </div>
+            <ul class="jhCol"></ul>
+        </div>
+        
+        <div class="content03">
+                <div class="conTit" id="accessories" style="background-position:  0 -306px;">箱包饰品</div>
+                <div class="conNav">
+                    <a href="#">进口零食</a><span>|</span>
+                    <a href="#">进口零食</a><span>|</span>
+                    <a href="#">进口零食</a>
+                </div>
+                <div class="shopImg">
+                    <a href="#">
+                        <img src="imgs/307c9e023a9d457d818e86f516bb18b4.jpg" alt="">
+                    </a>
+                </div>
+                <ul class="jhCol"></ul>
+                <div class="foodImg">
+                    <a href="#">
+                        <img src="imgs/a948c205a9904cd9923a04c4baa63533.jpg" alt="">
+                    </a>
+                </div>
+                <ul class="jhCol"></ul>
+        </div>
+        
+        <a href="#" class="adv">
+            <img src="imgs/d157bbd503c34bb88f6e61029ccde6c6.jpg" alt="">
+        </a>
+
+        <div class="content03">
+            <div class="conTit" id="clothes" style="background-position:  0 -408px;">服装鞋帽</div>
+            <div class="conNav">
+                <a href="#">进口零食</a><span>|</span>
+                <a href="#">进口零食</a><span>|</span>
+                <a href="#">进口零食</a>
+            </div>
+            <div class="shopImg">
+                <a href="#">
+                    <img src="imgs/dfd68bdc9eef4a489ab55254b09b775c.jpg" alt="">
+                </a>
+            </div>
+            <ul class="jhCol"></ul>
+            <div class="foodImg">
+                <a href="#">
+                    <img src="imgs/b853f1363c814f9482793816148071b0.jpg" alt="">
+                </a>
+            </div>
+            <ul class="jhCol"></ul>
+        </div>
+        <div class="content03">
+                <div class="conTit" id="digital" style="background-position: 0 -459px;">家用电器</div>
+                <div class="conNav">
+                    <a href="#">进口零食</a><span>|</span>
+                    <a href="#">进口零食</a><span>|</span>
+                    <a href="#">进口零食</a>
+                </div>
+                <div class="shopImg">
+                    <a href="#">
+                        <img src="imgs/798cd2eae9464767873d6c7929e72d99.jpg" alt="">
+                    </a>
+                </div>
+                <ul class="jhCol"></ul>
+                <div class="foodImg">
+                    <a href="#">
+                        <img src="imgs/fc32fb19758144678018f14342ac0cb9.jpg" alt="">
+                    </a>
+                </div>
+                <ul class="jhCol"></ul>
+        </div>
+        
+        <a href="#" class="adv">
+            <img src="imgs/ee60abeab42d4488b9fe5a5fa87a79f9.jpg" alt="">
+        </a>
+
+        <div class="content04">
+            <div>
+            <h4>户外运动</h4>
+            <div class="shopImg">
+                <a href="#">
+                    <img src="imgs/507e4d26aaf24ef2a538e3ba7a3a2eb2.jpg" alt="">
+                    <p>迪佳千湖手竿</p>
+                    <h5>超长鱼竿</h5>
+                </a>
+            </div>
+            <ul class="jhCol"></ul>
+            </div>
+            <div>
+                <h4 style="background: url(imgs/bg2.png) no-repeat 0 -50px;
+                color: #efa546;">汽车用品</h4>
+                <div class="shopImg">
+                    <a href="#">
+                        <img src="imgs/e037725a80bd446db814e713a56f5a40.jpg" alt="">
+                        <p>佳通轮胎</p>
+                        <h5>耐力承载更长里程</h5>
+                    </a>
+                </div>
+                <ul class="jhCol"></ul>
+            </div>
+            <div>
+                <h4>图书音像</h4>
+                <div class="shopImg">
+                    <a href="#">
+                        <img src="imgs/ae353bd90c2448fa923c7aac1f127766.jpg" alt="">
+                        <p>小批娃少儿图书馆</p>
+                        <h5>仙女蜜儿 畅销书籍</h5>
+                    </a>
+                </div>
+                <ul class="jhCol"></ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer-top">
+        <ul class="footer-top-item">
+            <li>
+                <i class="iconfont icon-weishoucang-"></i>
+                <p>100% 正品保证</p>
+                <span>购物无忧</span>
+            </li>
+            <li>
+                <i class="iconfont icon-weishoucang-"></i>
+                <p>15天无理由退货</p>
+                <span>售后保障</span>
+            </li>
+            <li>
+                <i class="iconfont icon-weishoucang-"></i>
+                <p>精准定位 品质商铺</p>
+                <span>特色购物</span>
+            </li>
+            <li>
+                <i class="iconfont icon-weishoucang-"></i>
+                <p>500余家服务公司</p>
+                <span>特色服务</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-center">
+        <div class="footerCenter">
+            <ul class="footer-center-item">
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>购物指南</h2>
+                    <ol>
+                        <li><a href="#">注册流程</a></li>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">用户介绍</a></li>
+                        <li><a href="#">订单状态</a></li>
+                        <li><a href="#">积分说明</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>售后服务</h2>
+                    <ol>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">退换货流程</a></li>
+                        <li><a href="#">价格保护</a></li>
+                        <li><a href="#">实体服务公司</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>物流配送</h2>
+                    <ol>
+                        <li><a href="#">上门自提</a></li>
+                        <li><a href="#">服务公司配送</a></li>
+                        <li><a href="#">快递直达</a></li>
+                        <li><a href="#">今合自营商城</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>支付方式</h2>
+                    <ol>
+                        <li><a href="#">银联在线支付</a></li>
+                        <li><a href="#">信用卡支付</a></li>
+                        <li><a href="#">账户余额查询</a></li>
+                        <li><a href="#">积分支付</a></li>
+                        <li><a href="#">邮政汇款</a></li>
+                        <li><a href="#">公司转账</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2><i class="iconfont icon-shouye-"></i>商户服务</h2>
+                    <ol>
+                        <li><a href="#">商家入驻</a></li>
+                        <li><a href="#">连锁网点</a></li>
+                        <li><a href="#">服务公司</a></li>
+                        <li><a href="#">今合规则</a></li>
+                        <li><a href="#">资质标准</a></li>
+                        <li><a href="#">运管费标准</a></li>
+                        <li><a href="#">招商标准</a></li>
+                    </ol>
+                </li>
+            </ul>
+            <div class="footerCenter-side">
+                <p class="footer-service">客服中心
+                    <span>(周一至周日:<small>9:30-17:30</small>)</span>
+                </p>
+                <ul class="footer-code">
+                    <li style="float:none;">
+                        <span>扫一扫，关注微信公众号</span>
+                        <p>
+                            <img src="imgs/jhwerweim.jpg" width="130" height="130">
+                        </p>
+                        <span>进入公众号，联系在线客服</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer">
+            <div class="footer-copyright">
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                    <img src="imgs/gongan.png" alt="">
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+                <p>
+                    <a href="#">食品经营许可证号：JY11106020231993</a>
+                    <a href="#">酒类流通备案登记表编号 110007107944</a>
+                </p>
+            </div>
+            <div class="footer-certificate">
+                <div class="footerImgUp">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+                <div class="footerImgDown">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="side-nav">
+        <li>
+            <a href="#">
+                <span class="iconfont icon-wode-"></span>
+            </a>
+            <div>我的今合</div>
+        </li>
+        <li>
+            <a href="#">
+                <span class="iconfont icon-wode-"></span>
+            </a>
+            <div>收藏夹</div>
+        </li>
+        <li>
+            <a href="#">
+                <span class="iconfont icon-wode-"></span>
+            </a>
+            <div>购物车</div>
+        </li>
+        <li>
+            <a href="#">
+                <img src="imgs/chat.png" alt="">
+            </a>
+            <div>沸话</div>
+        </li>
+    </ul>
+
+    <div class="backtop">
+        <a href="#">
+            <span class="iconfont icon-shangjiantou"></span>
+        </a>
+        <div>TOP</div>
+    </div>
+
+    <ul class="side-nav02">
+        <li><a href="#food"><span class="iconfont icon-wode-"></span> 美食特产</a></li>
+        <li><a href="#home"><span class="iconfont icon-wode-"></span> 家居用品</a></li>
+        <li><a href="#beauty"><span class="iconfont icon-wode-"></span> 美容护肤</a></li>
+        <li><a href="#accessories"><span class="iconfont icon-wode-"></span> 饰品母婴</a></li>
+        <li><a href="#clothes"><span class="iconfont icon-wode-"></span> 男装女装</a></li>
+        <li><a href="#digital"><span class="iconfont icon-wode-"></span> 数码电子</a></li>
+        <li><a href="#food"><span class="iconfont icon-wode-"></span> 美食特产</a></li>
+        <li id="backTop"></li>
+    </ul>
+
+
+    <div class="fix-top">
+        <div class="fix-top-inner">
+            <div class="navTit" id="navTit">
+                <span class="iconfont icon-shouye-"></span>
+                <span>全部商品</span>
+                <span class="iconfont icon-jiantou9"></span>
+            </div>
+            <div class="searchBar-down">
+                <div class="searchSwitch">
+                    商品
+                    <span id="switch-btn" class="iconfont icon-jiantou9"></span>
+                    <ul id="searchDropDown">
+                        <li><a href="#">商品</a></li>
+                        <li><a href="#">网店</a></li>
+                    </ul>
+                </div>
+                <input type="text" placeholder="请输入关键字!">
+                <div id="search">搜索</div>
+            </div>
+            <div class="searchNav">
+                <a href="#">白酒</a><span>|</span>
+                <a href="#">干货</a><span>|</span>
+                <a href="#">洗发水</a><span>|</span>
+                <a href="#">餐具</a><span>|</span>
+                <a href="#">手机通讯</a><span>|</span>
+                <a href="#">篮球鞋</a><span>|</span>
+                <a href="#">汽车座套</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+ <!-- Swiper JS -->
+ <!-- Initialize Swiper -->
+ <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+        el: '.pagination',
+        },
+    });
+ </script>
